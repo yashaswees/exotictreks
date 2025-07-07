@@ -12,10 +12,13 @@
   "dependencies": {
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "i18next": "^25.2.1",
     "npm": "^11.2.0",
     "react": "^19.0.0",
     "react-bootstrap": "^2.10.10",
     "react-dom": "^19.0.0",
+    "react-helmet": "^6.1.0",
+    "react-i18next": "^15.5.3",
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {

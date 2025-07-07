@@ -1,6 +1,9 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <header
       className="bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center"
@@ -14,26 +17,22 @@ const Hero = () => {
       <div>
         {/* Tagline */}
         <p className="lead text-uppercase text-white-50 mb-2">
-          Explore | Experience | Elevate
+          {t("hero.tagline")}
         </p>
 
         {/* Main Title */}
-        <h1 className="display-3 fw-bold mb-4">
-          Your Next Adventure Awaits
-        </h1>
+        <h1 className="display-3 fw-bold mb-4">{t("hero.title")}</h1>
 
         {/* Description */}
-        <p className="lead mb-4">
-          Discover breathtaking destinations, curated experiences, and unforgettable journeys across Nepal, India, and Bhutan.
-        </p>
+        <p className="lead mb-4">{t("hero.description")}</p>
 
         {/* Call-to-Action Buttons */}
         <div className="d-flex flex-column flex-md-row gap-3 justify-content-center">
           <a href="#destinations" className="btn btn-light btn-lg px-4 py-2">
-            Explore Destinations
+            {t("hero.exploreButton")}
           </a>
           <a href="contact-us" className="btn btn-outline-light btn-lg px-4 py-2">
-            Plan Your Trip
+            {t("hero.planButton")}
           </a>
         </div>
 
@@ -41,15 +40,15 @@ const Hero = () => {
         <div className="d-flex gap-4 justify-content-center mt-5 flex-wrap text-white-50">
           <div className="text-center">
             <h4 className="fw-bold mb-0 text-white">20+</h4>
-            <small>Years of Experience</small>
+            <small>{t("hero.yearsOfExperience")}</small>
           </div>
           <div className="text-center">
             <h4 className="fw-bold mb-0 text-white">1000+</h4>
-            <small>Happy Travelers</small>
+            <small>{t("hero.happyTravelers")}</small>
           </div>
           <div className="text-center">
             <h4 className="fw-bold mb-0 text-white">3</h4>
-            <small>Exotic Countries</small>
+            <small>{t("hero.exoticCountries")}</small>
           </div>
         </div>
 

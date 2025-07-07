@@ -1,11 +1,16 @@
 import { NavLink } from "react-router-dom";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
+
 
 const Navbar = () => {
+  const { t } = useTranslation();
+
   return (
     <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div className="container">
         {/* Logo */}
-        <NavLink to="/" className="navbar-brand fw-bold text-primary" href="#">
+        <NavLink to="/" className="navbar-brand fw-bold text-primary">
           Exotic Treks
         </NavLink>
 
@@ -25,7 +30,6 @@ const Navbar = () => {
           id="navbarNav"
         >
           <ul className="navbar-nav align-items-center gap-3">
-            {/* Itinerary with Dropdown */}
             <li className="nav-item dropdown position-static">
               <a
                 className="nav-link text-dark fw-medium dropdown-toggle"
@@ -35,7 +39,7 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Itinerary
+                {t("navbar.itinerary")}
               </a>
               <div
                 className="dropdown-menu w-50 dropdown-menu-end py-3 shadow border-0"
@@ -43,27 +47,28 @@ const Navbar = () => {
               >
                 <div className="container">
                   <div className="row">
-                    {/* Activities Column */}
                     <div className="col-md-4 mb-3 mb-md-0">
-                      <h6 className="dropdown-header fw-bold">Activities</h6>
+                      <h6 className="dropdown-header fw-bold">
+                        {t("navbar.activities")}
+                      </h6>
                       <a className="dropdown-item py-2" href="#mountain-flight">
-                        Mountain Flight
+                        {t("navbar.mountainFlight")}
                       </a>
                       <a className="dropdown-item py-2" href="#safari">
-                        Safari
+                        {t("navbar.safari")}
                       </a>
                       <a className="dropdown-item py-2" href="#sightseeing">
-                        Sightseeing
+                        {t("navbar.sightseeing")}
                       </a>
                     </div>
 
-                    {/* Treks Column */}
                     <div className="col-md-4 mb-3 mb-md-0">
-                      <h6 className="dropdown-header fw-bold">Treks</h6>
+                      <h6 className="dropdown-header fw-bold">
+                        {t("navbar.treks")}
+                      </h6>
                       <NavLink
                         to="/plans/annapurna-base-camp-trek"
                         className="dropdown-item py-2"
-                        href="#annapurna-base-camp"
                       >
                         Annapurna Base Camp
                       </NavLink>
@@ -87,55 +92,57 @@ const Navbar = () => {
                       </a>
                     </div>
 
-                    {/* Popular Packages Column */}
                     <div className="col-md-4">
                       <h6 className="dropdown-header fw-bold">
-                        Popular Packages
+                        {t("navbar.popularPackages")}
                       </h6>
                       <a className="dropdown-item py-2" href="#7-day-annapurna">
-                        7-Day Annapurna Trek
+                        {t("navbar.annapurna7Day")}
                       </a>
                       <a className="dropdown-item py-2" href="#10-day-everest">
-                        10-Day Everest Adventure
+                        {t("navbar.everest10Day")}
                       </a>
                       <a className="dropdown-item py-2" href="#wildlife-safari">
-                        Wildlife Safari Package
+                        {t("navbar.wildlifeSafari")}
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
             </li>
+
             <li className="nav-item">
               <NavLink to="/gallery" className="nav-link text-dark fw-medium">
-                Gallery
+                {t("navbar.gallery")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/blogs" className="nav-link text-dark fw-medium">
-                Blogs
+                {t("navbar.blogs")}
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink to="/about-us" className="nav-link text-dark fw-medium">
-                About us
+                {t("navbar.about")}
               </NavLink>
             </li>
-
             <li className="nav-item">
               <NavLink
                 to="/contact-us"
                 className="nav-link text-dark fw-medium"
               >
-                Contact us
+                {t("navbar.contact")}
               </NavLink>
             </li>
 
-            {/* Call to action button */}
             <li className="nav-item">
               <NavLink to="/contact-us" className="btn btn-primary px-3 py-1">
-                Book Now
+                {t("navbar.bookNow")}
               </NavLink>
+            </li>
+
+            <li className="nav-item">
+              <LanguageSwitcher />
             </li>
           </ul>
         </div>

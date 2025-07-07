@@ -2,8 +2,11 @@ import "../App.css";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { MdPhone, MdLocationOn } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="contact-section">
       <div className="contact-container">
@@ -11,68 +14,64 @@ const Contact = () => {
           {/* Info Section - Left Side */}
           <div className="info-card">
             <div className="card-content">
-              <h2 className="card-title">About Us</h2>
+              <h2 className="fw-bold">{t("contact.aboutTitle")}</h2>
               <div className="title-underline"></div>
-              <p className="card-text">
-                With over 20 years of experience, Exotique Nepal specializes in
-                creating unforgettable journeys across Nepal, India, and Tibet.
-                From breathtaking treks to rich cultural experiences, we craft
-                travel moments that stay with you for a lifetime.
-              </p>
+              <p className="card-text">{t("contact.aboutText")}</p>
               <div className="d-flex gap-5">
                 <div className="experience-badge w-100">
-                  <span className="years">20+</span>
-                  <span className="label">Years of Experience</span>
+                  <span className="years">{t("contact.years")}</span>
+                  <span className="label">{t("contact.experienceLabel")}</span>
                 </div>
               </div>
 
-              <h3 className="contact-info-title">Contact Information</h3>
+              <h3 className="contact-info-title">{t("contact.contactTitle")}</h3>
               <ul className="contact-list">
                 <li className="contact-item">
                   <IoMail className="email-icon contact-icon" />
                   <div className="contact-details">
-                    <span className="contact-label">Email</span>
+                    <span className="contact-label">{t("contact.emailLabel")}</span>
                     <a
-                      href="mailto:info@exotiquenepal.fr"
+                      href={`mailto:${t("contact.email")}`}
                       className="contact-value"
                     >
-                      info@exotiquenepal.fr
+                      {t("contact.email")}
                     </a>
                   </div>
                 </li>
                 <li className="contact-item">
                   <IoLogoWhatsapp className="contact-icon whatsapp-icon" />
                   <div className="contact-details">
-                    <span className="contact-label">WhatsApp</span>
+                    <span className="contact-label">{t("contact.whatsappLabel")}</span>
                     <a
                       href="https://wa.me/9779841554895"
                       className="contact-value"
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Send Message
+                      {t("contact.whatsappMessage")}
                     </a>
                   </div>
                 </li>
                 <li className="contact-item">
                   <MdPhone className="contact-icon phone-icon" />
                   <div className="contact-details">
-                    <span className="contact-label">Phone</span>
-                    <a href="tel:+977-9841554895" className="contact-value">
-                      +977-9841554895
+                    <span className="contact-label">{t("contact.phoneLabel")}</span>
+                    <a href="tel:+9779841554895" className="contact-value">
+                      {t("contact.phone")}
                     </a>
                   </div>
                 </li>
                 <li className="contact-item">
                   <MdLocationOn className="contact-icon address-icon" />
                   <div className="contact-details">
-                    <span className="contact-label">Address</span>
+                    <span className="contact-label">{t("contact.addressLabel")}</span>
                     <span className="grey-text">
                       <a
                         href="https://maps.app.goo.gl/GsMc7krxVEDPLgeN8"
                         target="_blank"
+                        rel="noopener noreferrer"
                       >
-                        Thamel, Kathmandu, Nepal
+                        {t("contact.address")}
                       </a>
                     </span>
                   </div>
@@ -81,6 +80,7 @@ const Contact = () => {
             </div>
           </div>
 
+          {/* Map Section - Right Side */}
           <div
             className="info-card"
             style={{
