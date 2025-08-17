@@ -1,0 +1,141 @@
+{
+  "hero": {
+    "tagline": "Explorer | Expérimenter | Élever",
+    "title": "Votre prochaine aventure vous attend",
+    "description": "Découvrez des destinations à couper le souffle, des expériences sur mesure et des voyages inoubliables à travers le Népal, l'Inde et le Bhoutan.",
+    "exploreButton": "Explorer les destinations",
+    "planButton": "Planifiez votre voyage",
+    "yearsOfExperience": "Années d'expérience",
+    "happyTravelers": "Voyageurs satisfaits",
+    "exoticCountries": "Pays exotiques"
+  },
+  "navbar": {
+    "itinerary": "Itinéraire",
+    "activities": "Activités",
+    "mountainFlight": "Vol de montagne",
+    "safari": "Safari",
+    "sightseeing": "Visite touristique",
+    "treks": "Randonnées",
+    "popularPackages": "Forfaits populaires",
+    "annapurna7Day": "Trek Annapurna de 7 jours",
+    "everest10Day": "Aventure Everest de 10 jours",
+    "wildlifeSafari": "Safari animalier",
+    "gallery": "Galerie",
+    "blogs": "Blogs",
+    "about": "À propos",
+    "contact": "Contact",
+    "bookNow": "Réserver"
+  },
+  "destinations": {
+    "title": "Destinations phares",
+    "nepalDesc": "Explorez l'Himalaya, les temples anciens et les traditions vibrantes.",
+    "indiaDesc": "Du Taj Mahal aux retraites spirituelles, l'Inde offre une diversité à chaque pas.",
+    "bhutanDesc": "Découvrez des monastères paisibles, des paysages spectaculaires et un charme intemporel."
+  },
+
+  "footer": {
+    "companyName": "Exotic Treks",
+    "description": "Créant des expériences de voyage inoubliables à travers le Népal, l'Inde et le Tibet depuis 2005.",
+    "quickLinks": "Liens rapides",
+    "home": "Accueil",
+    "about": "À propos",
+    "blogs": "Blogs",
+    "contact": "Contactez-nous",
+    "destinations": "Destinations populaires",
+    "kathmandu": "Kathmandu",
+    "pokhara": "Pokhara",
+    "everest": "Camp de base de l’Everest",
+    "annapurna": "Circuit des Annapurnas",
+    "chitwan": "Parc national de Chitwan",
+    "contactTitle": "Nous contacter",
+    "location": "Thamel, Kathmandu, Népal",
+    "phone": "+977-9841554895",
+    "email": "exotictreks@gmail.com",
+    "rights": "Tous droits réservés."
+  },
+
+  "contact": {
+    "aboutTitle": "À propos de nous",
+    "aboutText": "Avec plus de 20 ans d'expérience, Exotique Nepal est spécialisé dans la création de voyages inoubliables à travers le Népal, l'Inde et le Tibet. Des randonnées à couper le souffle aux riches expériences culturelles, nous créons des souvenirs de voyage qui durent toute une vie.",
+    "years": "20+",
+    "experienceLabel": "Années d'expérience",
+    "contactTitle": "Informations de contact",
+    "emailLabel": "E-mail",
+    "email": "info@exotiquenepal.fr",
+    "whatsappLabel": "WhatsApp",
+    "whatsappMessage": "Envoyer un message",
+    "phoneLabel": "Téléphone",
+    "phone": "+977-9841554895",
+    "addressLabel": "Adresse",
+    "address": "Thamel, Katmandou, Népal"
+  },
+
+  "about": {
+    "title": "À propos",
+    "intro": "Exotic Treks & Expeditions guide les aventuriers à travers le Népal, le Tibet et l'Inde depuis plus de 20 ans. Notre équipe d'experts locaux assure des voyages sûrs, immersifs et durables.",
+    "story": "Fondée en 1999 par un groupe de guides locaux passionnés, Exotic Treks & Expeditions est devenue l'une des agences de voyages d'aventure les plus respectées du Népal. Avec une profonde connexion aux Himalayas et aux communautés locales, notre équipe s'engage à offrir des expériences de trekking authentiques et durables.",
+    "goal": "Notre objectif est de rendre chaque voyage significatif — non seulement pour les voyageurs, mais aussi pour les communautés locales avec lesquelles nous travaillons. En promouvant un tourisme responsable, nous préservons la beauté naturelle de la région tout en améliorant la vie des habitants.",
+    "whyChooseUs": {
+      "title": "Pourquoi nous choisir",
+      "carbon": {
+        "label": "Respectueux de l’environnement",
+        "desc": "Voyages écoresponsables favorisant un tourisme durable."
+      },
+      "guides": {
+        "label": "Guides locaux expérimentés",
+        "desc": "Des randonnées encadrées par des experts locaux certifiés."
+      },
+      "treks": {
+        "label": "1000+ randonnées organisées",
+        "desc": "Un partenaire de confiance pour des milliers d'expéditions réussies."
+      },
+      "support": {
+        "label": "Assistance 24h/24",
+        "desc": "Toujours disponibles pour accompagner votre voyage, jour et nuit."
+      }
+    },
+    "testimonials": {
+      "title": "Ce que disent nos voyageurs",
+      "feedback1": "Une agence au top ! Accueil formidable à l'arrivée à Katmandou. Les guides et les responsables font tout pour que le séjour corresponde à vos attentes, à des tarifs très raisonnables. On se sent comme en famille à la fin du voyage.",
+      "feedback2": "Une agence francophone au top qui se donne à fond pour satisfaire ses clients fidèles. On est en sécurité totale de l’arrivée jusqu’au départ — tout est parfaitement organisé.",
+      "feedback3": "Des circuits bien préparés, des guides au top, attentifs à votre confort et à vos besoins. Première expérience pour moi, certainement pas la dernière."
+    },
+    "galleryTitle": "Galerie"
+  },
+
+  "gallery": {
+    "title": "Galerie",
+    "subtitle": "Explorez des moments inoubliables de nos voyages.",
+    "imageAlt": "Galerie"
+  },
+
+  "blogs": {
+    "title": "Blogs",
+    "annapurna": {
+      "excerpt": "L'un des plus beaux treks au monde avec ses sommets mythiques comme l'Annapurna I et le Machapuchare. Une aventure inoubliable au cœur de l'Himalaya."
+    },
+    "pikey": {
+      "excerpt": "CULTURE, HUMANITAIRE et TREK : une belle aventure au Pikey Peak. Retrouvez-les au Festival du Voyage les 19 et 20 novembre à Quettehou."
+    },
+    "manaslu": {
+      "excerpt": "11 personnes en quête d'aventure ont exploré les paysages spectaculaires autour du Manaslu. Un trek exigeant et inoubliable."
+    }
+  },
+
+  "contactPage": {
+    "title": "Contactez-nous",
+    "description": "Avec plus de 20 ans d'expérience, Exotique Nepal est spécialisé dans la création de voyages inoubliables au Népal, en Inde et au Tibet. Des treks à couper le souffle aux riches expériences culturelles, nous créons des moments de voyage qui restent à jamais gravés dans votre mémoire.",
+    "experienceYears": "20+",
+    "experienceLabel": "Années d'expérience",
+    "customers": "1000+",
+    "customerLabel": "Clients satisfaits",
+    "emailLabel": "E-mail",
+    "email": "info@exotiquenepal.fr",
+    "whatsappLabel": "WhatsApp",
+    "whatsappMessage": "Envoyer un message",
+    "phoneLabel": "Téléphone",
+    "phone": "+977-9841554895",
+    "addressLabel": "Adresse",
+    "address": "Thamel, Katmandou, Népal"
+  }
+}
