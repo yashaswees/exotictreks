@@ -27,9 +27,9 @@ const Destinations = () => {
 
   return (
     <section id="destinations" className="container my-5">
-      <h2 className="text-center fw-bold mb-5 ">
+      <h1 className="text-center fw-bold mb-5 ">
         {t("destinations.title")}
-      </h2>
+      </h1>
       <div className="row g-4">
         {destinations.map((dest, index) => (
           <div key={index} className="col-md-4">

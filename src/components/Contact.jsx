@@ -82,13 +82,7 @@ const Contact = () => {
 
           {/* Map Section - Right Side */}
           <div
-            className="info-card"
-            style={{
-              width: "100%",
-              height: "700px",
-              overflow: "hidden",
-              borderRadius: "8px",
-            }}
+            className="info-card map-card "
           >
             <iframe
               title="Exotic Treks Map"
