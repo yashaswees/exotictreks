@@ -9,7 +9,12 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
       <div className="container">
         {/* Logo */}
-        <NavLink to="/" className="navbar-brand fw-bold text-primary">
+        <NavLink to="/" className="navbar-brand fw-bold text-primary d-flex align-items-center">
+          <img 
+            src="/images/logo.png" 
+            alt="Exotic Treks & Expeditions Logo" 
+            style={{ height: "40px", marginRight: "10px" }}
+          />
           Exotic Treks & Expeditions
         </NavLink>
 
@@ -50,45 +55,145 @@ const Navbar = () => {
                       <h6 className="dropdown-header fw-bold">
                         {t("navbar.activities")}
                       </h6>
-                      <a className="dropdown-item py-2" href="#mountain-flight">
+                      <NavLink to="/plans/mountain-flight" className="dropdown-item py-2">
                         {t("navbar.mountainFlight")}
-                      </a>
-                      <a className="dropdown-item py-2" href="#safari">
+                      </NavLink>
+                      <NavLink to="/plans/safari" className="dropdown-item py-2">
                         {t("navbar.safari")}
-                      </a>
-                      <a className="dropdown-item py-2" href="#sightseeing">
+                      </NavLink>
+                      <NavLink to="/plans/sightseeing" className="dropdown-item py-2">
                         {t("navbar.sightseeing")}
-                      </a>
+                      </NavLink>
+                      <NavLink to="/plans/peak-climbing" className="dropdown-item py-2">
+                        Peak Climbing
+                      </NavLink>
+                      <NavLink to="/plans/pilgrimage-tour" className="dropdown-item py-2">
+                        Pilgrimage Tour
+                      </NavLink>
+                      <NavLink to="/plans/expeditions" className="dropdown-item py-2">
+                        Expeditions
+                      </NavLink>
+                      <NavLink to="/plans/bird-watching" className="dropdown-item py-2">
+                        Bird Watching
+                      </NavLink>
+                      <NavLink to="/plans/rafting" className="dropdown-item py-2">
+                        Rafting
+                      </NavLink>
                     </div>
 
                     <div className="col-md-4 mb-3 mb-md-0">
                       <h6 className="dropdown-header fw-bold">
                         {t("navbar.treks")}
                       </h6>
-                      <NavLink
-                        to="/plans/annapurna-base-camp-trek"
-                        className="dropdown-item py-2"
-                      >
-                        Annapurna Base Camp
-                      </NavLink>
-                      <a
-                        className="dropdown-item py-2"
-                        href="#annapurna-circuit"
-                      >
-                        Annapurna Circuit
-                      </a>
-                      <a className="dropdown-item py-2" href="#larke-la-pass">
+                      <div className="dropdown dropend annapurna-dropdown">
+                        <a
+                          className="dropdown-item py-2 dropdown-toggle"
+                          href="#annapurna-trek"
+                          role="button"
+                          aria-expanded="false"
+                        >
+                          Annapurna Trek
+                        </a>
+                        <ul className="dropdown-menu shadow border-0">
+                          <li>
+                            <NavLink to="/plans/annapurna-base-camp-trek" className="dropdown-item py-2">
+                              Annapurna Base Camp
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/annapurna-circuit" className="dropdown-item py-2">
+                              Annapurna Circuit
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </div>
+                      <NavLink to="/plans/larke-la-pass" className="dropdown-item py-2">
                         Larke la Pass
-                      </a>
-                      <a
-                        className="dropdown-item py-2"
-                        href="#everest-base-camp"
-                      >
-                        Everest Base Camp
-                      </a>
-                      <a className="dropdown-item py-2" href="#manaslu-circuit">
+                      </NavLink>
+                      <div className="dropdown dropend everest-dropdown">
+                        <a
+                          className="dropdown-item py-2 dropdown-toggle"
+                          href="#everest-base-camp"
+                          role="button"
+                          aria-expanded="false"
+                        >
+                          Everest Trek
+                        </a>
+                        <ul className="dropdown-menu shadow border-0">
+                          <li>
+                            <NavLink to="/plans/everest-classic-trek" className="dropdown-item py-2">
+                              Everest Classic Trek
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/everest-base-camp" className="dropdown-item py-2">
+                              Everest Base Camp
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/everest-foothill-trek" className="dropdown-item py-2">
+                              Everest Foothill Trek
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/everest-kalapathar-trek" className="dropdown-item py-2">
+                              Everest Kalapathar Trek
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/everest-tengboche-trek" className="dropdown-item py-2">
+                              Everest Tengboche Trek
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/imja-tse-trek" className="dropdown-item py-2">
+                              Imja Tse Trek
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </div>
+                      <NavLink to="/plans/manaslu-circuit" className="dropdown-item py-2">
                         Manaslu Circuit
-                      </a>
+                      </NavLink>
+                      <div className="dropdown dropend langtang-dropdown">
+                        <a
+                          className="dropdown-item py-2 dropdown-toggle"
+                          href="#langtang-valley-tek"
+                          role="button"
+                          aria-expanded="false"
+                        >
+                          Langtang Trek
+                        </a>
+                        <ul className="dropdown-menu shadow border-0">
+                          <li>
+                            <NavLink to="/plans/langtang-ganjala" className="dropdown-item py-2">
+                              Langtang Valley: Ganjala
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/langtang-gosaikunda" className="dropdown-item py-2">
+                              Langtang Valley: Gosaikunda
+                            </NavLink>
+                          </li>
+                          <li>
+                            <NavLink to="/plans/langtang-valley-trek" className="dropdown-item py-2">
+                              Langtang Valley Trek
+                            </NavLink>
+                          </li>
+                        </ul>
+                      </div>
+                      <NavLink
+                        to="/plans/ruby-valley-trek"
+                        className="dropdown-item py-2"
+                      >
+                        Ruby Valley Trek
+                      </NavLink>
+                      <NavLink to="/plans/mustang-trek" className="dropdown-item py-2">
+                        Mustang Trek
+                      </NavLink>
+                      <NavLink to="/plans/dhaulagiri-trek" className="dropdown-item py-2">
+                        Dhaulagiri Trek
+                      </NavLink>
                     </div>
 
                     <div className="col-md-4">
@@ -104,6 +209,12 @@ const Navbar = () => {
                       <a className="dropdown-item py-2" href="#wildlife-safari">
                         {t("navbar.wildlifeSafari")}
                       </a>
+                      <NavLink to="/plans/bird-watching" className="dropdown-item py-2">
+                        Bird Watching
+                      </NavLink>
+                      <NavLink to="/plans/visit-nepal" className="dropdown-item py-2">
+                        Visit Nepal
+                      </NavLink>
                     </div>
                   </div>
                 </div>
@@ -146,6 +257,34 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+
+      {/* CSS for hover dropdown */}
+      <style>{`
+        .everest-dropdown:hover > .dropdown-menu,
+        .langtang-dropdown:hover > .dropdown-menu,
+        .annapurna-dropdown:hover > .dropdown-menu {
+          display: block;
+          margin-top: 0;
+        }
+        .everest-dropdown > .dropdown-menu,
+        .langtang-dropdown > .dropdown-menu,
+        .annapurna-dropdown > .dropdown-menu {
+          display: none;
+          position: absolute;
+          left: 100%;
+          top: 0;
+        }
+        .everest-dropdown,
+        .langtang-dropdown,
+        .annapurna-dropdown {
+          position: relative;
+        }
+        .everest-dropdown > .dropdown-toggle::after,
+        .langtang-dropdown > .dropdown-toggle::after,
+        .annapurna-dropdown > .dropdown-toggle::after {
+          margin-left: 0.5em;
+        }
+      `}</style>
     </nav>
   );
 };

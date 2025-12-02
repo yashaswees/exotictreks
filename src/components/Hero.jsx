@@ -1,17 +1,17 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import heroImage from "../assets/herosection.jpg";
 
 const Hero = () => {
   const { t } = useTranslation();
 
   return (
     <header
-      className="bg-primary text-white text-center d-flex flex-column justify-content-center align-items-center"
+      className="text-white text-center d-flex flex-column justify-content-center align-items-center"
       style={{
         minHeight: "70vh",
         padding: "0 20px",
-        background:
-          "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/hero.jpg') center/cover no-repeat",
+        background: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${heroImage}) center/cover no-repeat`,
       }}
     >
       <div>
