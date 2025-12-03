@@ -73,9 +73,6 @@ const Navbar = () => {
                       <NavLink to="/plans/expeditions" className="dropdown-item py-2">
                         Expeditions
                       </NavLink>
-                      <NavLink to="/plans/bird-watching" className="dropdown-item py-2">
-                        Bird Watching
-                      </NavLink>
                       <NavLink to="/plans/rafting" className="dropdown-item py-2">
                         Rafting
                       </NavLink>

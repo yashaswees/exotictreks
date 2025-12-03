@@ -23,6 +23,7 @@ import PeakClimbing from "./pages/plans/PeakClimbing";
 import PilgrimageTour from "./pages/plans/PilgrimageTour";
 import Expeditions from "./pages/plans/Expeditions";
 import BirdWatching from "./pages/plans/BirdWatching";
+import Rafting from "./pages/plans/Rafting";
 import VisitNepal from "./pages/plans/VisitNepal";
 import VisitIndia from "./pages/plans/VisitIndia";
 import VisitTibet from "./pages/plans/VisitTibet";
@@ -63,6 +64,7 @@ const App = () => {
         <Route exact path="/plans/pilgrimage-tour" element={<PilgrimageTour />}></Route>
         <Route exact path="/plans/expeditions" element={<Expeditions />}></Route>
         <Route exact path="/plans/bird-watching" element={<BirdWatching />}></Route>
+        <Route exact path="/plans/rafting" element={<Rafting />}></Route>
         <Route exact path="/plans/visit-nepal" element={<VisitNepal />}></Route>
         <Route exact path="/plans/visit-india" element={<VisitIndia />}></Route>
         <Route exact path="/plans/visit-tibet" element={<VisitTibet />}></Route>
