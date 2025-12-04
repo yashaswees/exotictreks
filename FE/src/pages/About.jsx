@@ -1,43 +1,64 @@
-import React from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import {
-  FaLeaf,
-  FaUsers,
-  FaMountain,
-  FaHandsHelping,
-  FaArrowRight,
-} from "react-icons/fa";
-import { NavLink } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+"use client"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
+import { FaLeaf, FaUsers, FaMountain, FaHandsHelping, FaArrowRight } from "react-icons/fa"
+import { NavLink } from "react-router-dom"
+import { useTranslation } from "react-i18next"
+import AboutImg from "../../public/images/gallery8.jpg"
 
 function About() {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
 
   return (
     <>
       <Navbar />
       <div className="about-us">
-        {/* About Us */}
-        <section style={{ backgroundColor: "#f8f9fa" }} className="py-5">
+        {/* About Us - Redesigned with better structure and visual appeal */}
+        <section
+          className="py-5"
+          style={{
+            color: "#212529",
+          }}
+        >
           <div className="container">
-            <div className="text-center mb-4">
-              <h2 className="fw-bold">{t("about.title")}</h2>
-              <div className="title-underline mx-auto"></div>
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="text-start">
+                  <h1 className="fw-bold mb-4 ">{t("about.title")}</h1>
+                  <div className="mb-4" style={{ width: "80px", height: "4px", backgroundColor: "#ffc107" }}></div>
+
+                  <div className="mb-4">
+                    <p className="fs-5 mb-3">{t("about.intro")}</p>
+                  </div>
+
+                  <div className="mb-4">
+                    <h5 className="fw-semibold mb-2">Our Story</h5>
+                    <p className="fs-6">{t("about.story")}</p>
+                  </div>
+
+                  <div className="mb-4">
+                    <h5 className="fw-semibold mb-2">Our Mission</h5>
+                    <p className="fs-6">{t("about.goal")}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="col-lg-6">
+                <div className="text-center">
+                  <img
+                    src={AboutImg}
+                    alt="Exotic Treks Team"
+                    className="img-fluid rounded shadow-lg"
+                    style={{ maxHeight: "600px", objectFit: "cover" }}
+                  />
+                </div>
+              </div>
             </div>
-            <p className="lead text-center mx-auto" style={{ maxWidth: "1000px" }}>
-              {t("about.intro")}
-              <p className="fs-5 text-start">{t("about.story")}</p>
-              <p className="fs-5 text-start">{t("about.goal")}</p>
-            </p>
           </div>
         </section>
 
         {/* Why Choose Us */}
-        <section
-          style={{ backgroundColor: "#0d2c50", color: "#ffffff" }}
-          className="py-5"
-        >
+        <section style={{ backgroundColor: "#0d2c50", color: "#ffffff" }} className="py-5">
           <div className="container">
             <h3 className="text-center fw-bold mb-5">{t("about.whyChooseUs.title")}</h3>
             <div className="row g-4">
@@ -76,12 +97,8 @@ function About() {
                       transition: "transform 0.3s",
                       borderRadius: "1rem",
                     }}
-                    onMouseEnter={(e) =>
-                      (e.currentTarget.style.transform = "translateY(-6px)")
-                    }
-                    onMouseLeave={(e) =>
-                      (e.currentTarget.style.transform = "translateY(0)")
-                    }
+                    onMouseEnter={(e) => (e.currentTarget.style.transform = "translateY(-6px)")}
+                    onMouseLeave={(e) => (e.currentTarget.style.transform = "translateY(0)")}
                   >
                     <div
                       className="mx-auto mb-3 d-flex align-items-center justify-content-center rounded-circle"
@@ -105,10 +122,7 @@ function About() {
         </section>
 
         {/* Testimonials */}
-        <section
-          style={{ backgroundColor: "#ffffff" }}
-          className="py-5 border-top"
-        >
+        <section style={{ backgroundColor: "#ffffff" }} className="py-5 border-top">
           <div className="container">
             <h3 className="text-center fw-bold mb-5">{t("about.testimonials.title")}</h3>
             <div className="row g-4">
@@ -165,12 +179,8 @@ function About() {
               <NavLink
                 to="/gallery"
                 style={{ transition: "all 0.3s ease" }}
-                onMouseEnter={(e) =>
-                  (e.currentTarget.querySelector("svg").style.transform = "translateX(6px)")
-                }
-                onMouseLeave={(e) =>
-                  (e.currentTarget.querySelector("svg").style.transform = "translateX(0)")
-                }
+                onMouseEnter={(e) => (e.currentTarget.querySelector("svg").style.transform = "translateX(6px)")}
+                onMouseLeave={(e) => (e.currentTarget.querySelector("svg").style.transform = "translateX(0)")}
               >
                 <FaArrowRight
                   style={{
@@ -185,7 +195,7 @@ function About() {
       </div>
       <Footer />
     </>
-  );
+  )
 }
 
-export default About;
+export default About

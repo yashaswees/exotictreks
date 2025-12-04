@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
-
 const Navbar = () => {
   const { t } = useTranslation();
 
@@ -11,7 +10,7 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <NavLink to="/" className="navbar-brand fw-bold text-primary">
-          Exotic Treks
+          Exotic Treks & Expeditions
         </NavLink>
 
         {/* Toggle Button */}

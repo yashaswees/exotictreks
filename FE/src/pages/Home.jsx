@@ -7,6 +7,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import Marquee from "../components/Marquee";
 
 const Home = () => {
   return (
@@ -16,7 +17,7 @@ const Home = () => {
       <Destinations />
       <section className=" py-5">
         <div className="container">
-          <h2 className="text-center fw-bold mb-5">What Our Travelers Say</h2>
+          <h1 className="text-center fw-bold mb-5">What Our Travelers Say</h1>
           <div className="row g-4">
             {[
               {
@@ -39,7 +40,7 @@ const Home = () => {
               },
             ].map((t, index) => (
               <div className="col-md-4" key={index}>
-                <div className="card border-0 shadow-sm h-100 rounded-4">
+                <div className="p-4 shadow-sm border rounded h-100 bg-light">
                   <div className="card-body d-flex flex-column justify-content-between">
                     <p className="card-text fst-italic text-muted mb-4">
                       “{t.feedback}”
@@ -54,6 +55,12 @@ const Home = () => {
             ))}
           </div>
         </div>
+        <section className="py-5">
+          <h1 className="text-center fw-bold mb-5">
+            Partners and Certifications
+          </h1>
+          <Marquee />
+        </section>
       </section>
 
       {/* <About /> */}
