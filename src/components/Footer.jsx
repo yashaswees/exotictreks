@@ -4,6 +4,7 @@ import { MdPhone, MdAlternateEmail } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { CiFacebook } from "react-icons/ci";
 import { useTranslation } from "react-i18next";
+import { NavLink } from "react-router-dom";
 
 
 const Footer = () => {
@@ -60,7 +61,7 @@ const Footer = () => {
                 <FaWhatsapp />
               </a>
             </div>
-            
+
           </div>
 
           {/* Quick Links */}
@@ -79,42 +80,48 @@ const Footer = () => {
                 </a>
               </li>
               <li className="mb-2">
-                <a
-                  href="/about-us"
-                  className="text-muted text-decoration-none"
+                <NavLink
+                  to="/about-us"
+                  className={({ isActive }) =>
+                    `text-muted text-decoration-none${isActive ? " text-primary" : ""}`
+                  }
                   style={{ transition: "color 0.3s ease" }}
                   onMouseOver={(e) => (e.target.style.color = "#0d6efd")}
                   onMouseOut={(e) => (e.target.style.color = "#6c757d")}
                 >
                   {t("footer.about")}
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a
-                  href="/blogs"
-                  className="text-muted text-decoration-none"
+                <NavLink
+                  to="/blogs"
+                  className={({ isActive }) =>
+                    `text-muted text-decoration-none${isActive ? " text-primary" : ""}`
+                  }
                   style={{ transition: "color 0.3s ease" }}
                   onMouseOver={(e) => (e.target.style.color = "#0d6efd")}
                   onMouseOut={(e) => (e.target.style.color = "#6c757d")}
                 >
                   {t("footer.blogs")}
-                </a>
+                </NavLink>
               </li>
               <li className="mb-2">
-                <a
-                  href="/contact-us"
-                  className="text-muted text-decoration-none"
+                <NavLink
+                  to="/contact-us"
+                  className={({ isActive }) =>
+                    `text-muted text-decoration-none${isActive ? " text-primary" : ""}`
+                  }
                   style={{ transition: "color 0.3s ease" }}
                   onMouseOver={(e) => (e.target.style.color = "#0d6efd")}
                   onMouseOut={(e) => (e.target.style.color = "#6c757d")}
                 >
                   {t("footer.contact")}
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>
 
-          
+
 
           {/* Contact Info */}
           <div className="col-lg-3 col-md-12">

@@ -6,130 +6,99 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { FaWater } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+
 
 const Rafting = () => {
-  const activityInfo = {
-    name: "White Water Rafting in Nepal",
-    difficulty: "Grade 2-5+",
-    bestSeason: "Oct-Dec & Mar-May",
-    groupSize: "4-12 pax",
-  };
+  const { t } = useTranslation();
 
   const riverTrips = [
     {
-      name: "Bhote Koshi River",
-      duration: "2 Days",
-      grade: "Grade 4-5",
-      description:
-        "The Bhote Kosi is known as the River from Tibet and you can start a trip after a peek over the border into Tibet. The Kathmandu / Lhasa Highway (AKA Friendship Highway, Arniko Highway) runs along beside the river. You can run a day trip or do a two-day expedition and run parts of the river twice. It's a great beginner river for rafters and fun for kayakers at all levels. Bhote Koshi is the beautiful adventure trip with very steep and basically non-stop mountain river only 3 hours drive from Kathmandu offering two days of intense and challenging river activity.",
-      highlights: [
-        "Only 3 hours from Kathmandu",
-        "View of Tibet border",
-        "Intense white water rapids",
-        "Option for day trip or 2-day expedition",
-      ],
+      name: t("raftingPage.riverTrips.bhoteKoshi.name"),
+      duration: t("raftingPage.riverTrips.bhoteKoshi.duration"),
+      grade: t("raftingPage.riverTrips.bhoteKoshi.grade"),
+      description: t("raftingPage.riverTrips.bhoteKoshi.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.bhoteKoshi.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.bhoteKoshi.highlights", { returnObjects: true })
+        : []
     },
     {
-      name: "Kali Gandaki River",
-      duration: "3 Days",
-      grade: "Grade 3-4+",
-      description:
-        "A deservedly popular and medium length river trip combining exhilarating white water with fine scenery. One of the famous names of Himalayan Rivers, The Kali Gandaki rises in Mustang, an enclave of Nepal poking into Tibet on the other side of the Himalayas. As it tumbles down between the majestic Dhaulagiri and the Annapurna ranges, it creates one of the world's deepest gorges. All day you have continuous paddling against technical rapids on the Kali Gandaki River. Both experienced and novice rafters love this. Nowhere else is it possible to find such diversity on a 3-day raft trip. Nice drops, sparkling chutes and turbulent rapids provide class III to IV+ runs during the fall and spring seasons.",
-      highlights: [
-        "World's deepest gorge scenery",
-        "Views of Dhaulagiri and Annapurna",
-        "Mix of technical and fun rapids",
-        "Option to visit Chitwan or trek afterwards",
-      ],
+      name: t("raftingPage.riverTrips.kaliGandaki.name"),
+      duration: t("raftingPage.riverTrips.kaliGandaki.duration"),
+      grade: t("raftingPage.riverTrips.kaliGandaki.grade"),
+      description: t("raftingPage.riverTrips.kaliGandaki.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.kaliGandaki.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.kaliGandaki.highlights", { returnObjects: true })
+        : []
     },
     {
-      name: "Marshyangdi River",
-      duration: "5 Days",
-      grade: "Grade 4-5",
-      description:
-        "Marshyangdi is the raging river in Nepal and describes one of the best whitewater runs in the world. One of the best class 4 kayaking rivers in the world - continuous, exhilarating whitewater with magnificent mountain backdrops. Recommended for expert kayakers and rafters. If it's adventure you seek, you'll find it on this trip with one day of easy trekking and five days of intense rafting. Only recently opened for commercial rafting (many rapids have not been named yet), the Marshyangdi is one of the next generation of rivers in Nepal, steeper and with a much more continuous stretch of rapids.",
-      highlights: [
-        "One of the best whitewater runs in the world",
-        "Magnificent mountain backdrops",
-        "Recently opened for commercial rafting",
-        "Includes one day of trekking",
-      ],
+      name: t("raftingPage.riverTrips.marshyangdi.name"),
+      duration: t("raftingPage.riverTrips.marshyangdi.duration"),
+      grade: t("raftingPage.riverTrips.marshyangdi.grade"),
+      description: t("raftingPage.riverTrips.marshyangdi.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.marshyangdi.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.marshyangdi.highlights", { returnObjects: true })
+        : []
     },
     {
-      name: "Seti River",
-      duration: "2 Days",
-      grade: "Grade 2-3",
-      description:
-        "Seti River offers beautiful mountain views and passes through two beautiful and contrasting scenic areas of Manaslu and Annapurna regions. This river has relatively small volume but blue and warm water - ideal for first-time rafters or as 'warm-up' for intermediate kayakers. Seti is the best river for learning kayak in Nepal. The water temperature is incredibly warm, making it a popular choice for winter trips and kayak clinics. Most of the year, the Seti is a gentle river, attracting families, bird watchers, nature lovers and dreamers. The luxuriant vegetation visible along the river is a remnant of the vast forested area which once covered the middle hills of Nepal.",
-      highlights: [
-        "Perfect for beginners and families",
-        "Warm water - ideal for winter trips",
-        "Best river for learning kayaking",
-        "Beautiful Manaslu and Annapurna views",
-      ],
+      name: t("raftingPage.riverTrips.seti.name"),
+      duration: t("raftingPage.riverTrips.seti.duration"),
+      grade: t("raftingPage.riverTrips.seti.grade"),
+      description: t("raftingPage.riverTrips.seti.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.seti.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.seti.highlights", { returnObjects: true })
+        : []
     },
     {
-      name: "Sun Koshi River",
-      duration: "9 Days",
-      grade: "Grade 3-5",
-      description:
-        "One of the 10 classic and best white water journeys in the world, Sunkoshi (river of gold) offers the longest river trip in Nepal and is the most fascinating among rivers flowing down from snow-capped mountains. Big rapids, warm water, beautiful scenery and great camping make this a classic multi-day river trip. This enchanting 9-day river expedition will definitely be the highlight of your visit to Nepal. Sunkoshi is an unpredictable river with its own moods - serene, calm and tranquil one moment, wild and turbulent the next, always changing, always challenging. Within a short span of 9 days, you come in close contact with Nepal's natural beauty, people, culture, wildlife and its rivers.",
-      highlights: [
-        "One of world's top 10 classic river journeys",
-        "Nepal's longest river trip",
-        "250 species of orchids and 400 species of birds",
-        "Experience diverse ethnic cultures",
-      ],
+      name: t("raftingPage.riverTrips.sunKoshi.name"),
+      duration: t("raftingPage.riverTrips.sunKoshi.duration"),
+      grade: t("raftingPage.riverTrips.sunKoshi.grade"),
+      description: t("raftingPage.riverTrips.sunKoshi.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.sunKoshi.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.sunKoshi.highlights", { returnObjects: true })
+        : []
     },
     {
-      name: "Trishuli River",
-      duration: "3 Days",
-      grade: "Grade 2-3",
-      description:
-        "Rafting on the Trishuli River is an excellent opportunity to observe the diversity of demography, landscapes, cultural heritage and flora and fauna. The Trishuli River is the most easily accessible from Kathmandu, Pokhara and Royal Chitwan National Park. A trip on this river can be made for varied duration depending upon availability of time and interest. Scenic valleys and impressive gorges, exhilarating rapids and easier sections as well as the right amount of time all make it the perfect trip for first-time or experienced rafters.",
-      highlights: [
-        "Most accessible river from major cities",
-        "Perfect for all skill levels",
-        "Scenic valleys and impressive gorges",
-        "Flexible duration options",
-      ],
-    },
+      name: t("raftingPage.riverTrips.trishuli.name"),
+      duration: t("raftingPage.riverTrips.trishuli.duration"),
+      grade: t("raftingPage.riverTrips.trishuli.grade"),
+      description: t("raftingPage.riverTrips.trishuli.description"),
+      highlights: Array.isArray(t("raftingPage.riverTrips.trishuli.highlights", { returnObjects: true }))
+        ? t("raftingPage.riverTrips.trishuli.highlights", { returnObjects: true })
+        : []
+    }
   ];
+  const included = Array.isArray(
+    t("raftingPage.inclusions.included", { returnObjects: true })
+  )
+    ? t("raftingPage.inclusions.included", { returnObjects: true })
+    : [];
 
-  const included = [
-    "Professional river guide and safety kayakers",
-    "All rafting equipment (raft, paddles, helmets, life jackets)",
-    "Camping equipment (tents, sleeping bags, mattresses)",
-    "All meals during the trip",
-    "Transportation to/from put-in and take-out points",
-    "First aid kit and safety equipment",
-    "Permits and fees",
-  ];
+  const excluded = Array.isArray(
+    t("raftingPage.inclusions.excluded", { returnObjects: true })
+  )
+    ? t("raftingPage.inclusions.excluded", { returnObjects: true })
+    : [];
 
-  const excluded = [
-    "Personal travel insurance (mandatory)",
-    "Personal expenses",
-    "Tips and gratuities",
-    "Alcoholic beverages",
-    "Personal gear (swimwear, sandals, sunscreen)",
-    "Any expenses arising from unforeseen circumstances",
-  ];
+  const clothingItems = Array.isArray(
+    t("raftingPage.whatToBring.clothing.items", { returnObjects: true })
+  )
+    ? t("raftingPage.whatToBring.clothing.items", { returnObjects: true })
+    : [];
 
-  const aboutRafting = {
-    title: "White Water Rafting in Nepal",
-    description: `Nepal has earned the reputation of one of the best destinations for white water rafting. Cruising down rushing rivers of crashing waves and swirling rapids can make up the excitement of a lifetime. Rafting trips for some is the highlight of their stay in Nepal.
+  const waterproofItems = Array.isArray(
+    t("raftingPage.whatToBring.waterproof.items", { returnObjects: true })
+  )
+    ? t("raftingPage.whatToBring.waterproof.items", { returnObjects: true })
+    : [];
 
-The waters in Nepal offer something for everybody: Grade 5-5+ rivers with raging white water rapids for the adventurous, to Grade 2-3 rivers with a few rapids for novices. Rafters also have a choice ranging from two to three-week trips to trips of two or three days.
+  const personalItems = Array.isArray(
+    t("raftingPage.whatToBring.personal.items", { returnObjects: true })
+  )
+    ? t("raftingPage.whatToBring.personal.items", { returnObjects: true })
+    : [];
 
-The options include paddling, oaring and kayaking. Paddling requires all on boat to participate with instructions from the river runner. Luxury safari-style trips with full team are available too. In an oar boat, the guide rows alone giving participants a chance to observe the surroundings. Kayaking is another way to travel downstream - some companies offer inflatable kayaks or fiberglass kayaks for hire.`,
-  };
 
-  const safetyInfo = {
-    title: "Safety & Preparation",
-    description: `A typical day in the river begins early morning when participants arrive at the site. Instructions on safety and emergency situations are given to participants before the event. Life vests and helmets are worn by participants at all times during the trip. Meals are provided during the trip and some packages also provide river equipment and camping equipment.
-
-The best time for rafting is from October through mid-December and March through early May. In winter, hypothermia may be a hindrance to some. During monsoon months of June through September, the white water sections are dangerous, but gentler stretches are easy to raft on. So far the government has opened sections of 10 rivers for commercial rafting.`,
-  };
 
   return (
     <>
@@ -147,9 +116,9 @@ The best time for rafting is from October through mid-December and March through
               }}
             ></div>
             <div className="position-absolute bottom-0 start-0 p-4 text-white">
-              <h1 className="fw-bold">{activityInfo.name}</h1>
+              <h1 className="fw-bold"> {t("raftingPage.activityInfo.name")}</h1>
               <p className="lead">
-                Experience the thrill of Nepal's legendary rivers
+                {t("raftingPage.subHeroText")}
               </p>
             </div>
           </div>
@@ -165,15 +134,16 @@ The best time for rafting is from October through mid-December and March through
               }}
             >
               <div className="card-body">
-                <h2 className="card-title fw-bold">About Rafting in Nepal</h2>
+                <h2 className="card-title fw-bold">{t("raftingPage.aboutText")}</h2>
                 <p className="card-text">
-                  {aboutRafting.description.split("\n\n")[0]}
+                  {t("raftingPage.aboutRafting.p1")}
                 </p>
                 <p className="card-text">
-                  {aboutRafting.description.split("\n\n")[1]}
+                  {t("raftingPage.aboutRafting.p2")}
+
                 </p>
                 <p className="card-text">
-                  {aboutRafting.description.split("\n\n")[2]}
+                  {t("raftingPage.aboutRafting.p3")}
                 </p>
               </div>
             </div>
@@ -184,7 +154,7 @@ The best time for rafting is from October through mid-December and March through
               style={{ background: "#f8f9fa" }}
             >
               <div className="card-body">
-                <h3 className="card-title fw-bold mb-4">Quick Facts</h3>
+                <h3 className="card-title fw-bold mb-4">{t("raftingPage.quickFacts.title")}</h3>
 
                 <div
                   className="quick-fact-item d-flex align-items-center mb-3 p-2 rounded"
@@ -200,8 +170,8 @@ The best time for rafting is from October through mid-December and March through
                     />
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">River Grades</div>
-                    <div className="fw-medium">{activityInfo.difficulty}</div>
+                    <div className="text-muted small"> {t("raftingPage.quickFacts.grades")}</div>
+                    <div className="fw-medium">{t("raftingPage.activityInfo.difficulty")}</div>
                   </div>
                 </div>
 
@@ -219,8 +189,8 @@ The best time for rafting is from October through mid-December and March through
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Best Season</div>
-                    <div className="fw-medium">{activityInfo.bestSeason}</div>
+                    <div className="text-muted small">{t("raftingPage.quickFacts.season")}</div>
+                    <div className="fw-medium">{t("raftingPage.activityInfo.bestSeason")}</div>
                   </div>
                 </div>
 
@@ -238,8 +208,8 @@ The best time for rafting is from October through mid-December and March through
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Group Size</div>
-                    <div className="fw-medium">{activityInfo.groupSize}</div>
+                    <div className="text-muted small">{t("raftingPage.quickFacts.group")}</div>
+                    <div className="fw-medium">{t("raftingPage.activityInfo.groupSize")}</div>
                   </div>
                 </div>
               </div>
@@ -258,10 +228,10 @@ The best time for rafting is from October through mid-December and March through
                 <div className="d-flex align-items-center mb-3">
                   <i className="bi bi-shield-check text-primary fs-4 me-2"></i>
                   <h3 className="card-title fw-bold mb-0">
-                    {safetyInfo.title}
+                    {t("raftingPage.safetyInfo.title")}
                   </h3>
                 </div>
-                <p className="card-text">{safetyInfo.description}</p>
+                <p className="card-text">{t("raftingPage.safetyInfo.description")}</p>
               </div>
             </div>
           </div>
@@ -361,7 +331,7 @@ The best time for rafting is from October through mid-December and March through
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-check-circle text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">What's Included</h3>
+                  <h3 className="card-title fw-bold mb-0">  {t("raftingPage.inclusions.includedTitle")}</h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {included.map((item, index) => (
@@ -389,7 +359,7 @@ The best time for rafting is from October through mid-December and March through
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-x-circle text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">What's Excluded</h3>
+                  <h3 className="card-title fw-bold mb-0">{t("raftingPage.inclusions.excludedTitle")}</h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {excluded.map((item, index) => (
@@ -421,7 +391,7 @@ The best time for rafting is from October through mid-December and March through
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-backpack text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">What to Bring</h3>
+                  <h3 className="card-title fw-bold mb-0">  {t("raftingPage.whatToBring.title")}</h3>
                 </div>
                 <div className="row">
                   <div className="col-md-4">
@@ -431,27 +401,17 @@ The best time for rafting is from October through mid-December and March through
                     >
                       <h5 className="fw-medium d-flex align-items-center">
                         <i className="bi bi-layers me-2 text-primary"></i>
-                        Clothing
+                        {t("raftingPage.whatToBring.clothing.title")}
                       </h5>
                       <ul className="list-group list-group-flush">
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Quick-dry shorts/pants
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Synthetic T-shirts
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Swimwear
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Light fleece or jacket
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          River sandals with straps
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Hat with chin strap
-                        </li>
+                        {clothingItems.map((item, index) => (
+                          <li
+                            key={index}
+                            className="list-group-item border-0 py-1 bg-transparent"
+                          >
+                            {item}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -462,24 +422,17 @@ The best time for rafting is from October through mid-December and March through
                     >
                       <h5 className="fw-medium d-flex align-items-center">
                         <i className="bi bi-droplet me-2 text-primary"></i>
-                        Waterproof Gear
+                        {t("raftingPage.whatToBring.waterproof.title")}
                       </h5>
                       <ul className="list-group list-group-flush">
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Waterproof bag/dry bag
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Waterproof camera case
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Waterproof sunscreen (SPF 50+)
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Sunglasses with strap
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Rain jacket
-                        </li>
+                        {waterproofItems.map((item, index) => (
+                          <li
+                            key={index}
+                            className="list-group-item border-0 py-1 bg-transparent"
+                          >
+                            {item}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>
@@ -490,27 +443,17 @@ The best time for rafting is from October through mid-December and March through
                     >
                       <h5 className="fw-medium d-flex align-items-center">
                         <i className="bi bi-bandaid me-2 text-primary"></i>
-                        Personal Items
+                        {t("raftingPage.whatToBring.personal.title")}
                       </h5>
                       <ul className="list-group list-group-flush">
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Personal medications
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Insect repellent
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Lip balm with SPF
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Towel (quick-dry)
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Headlamp/flashlight
-                        </li>
-                        <li className="list-group-item border-0 py-1 bg-transparent">
-                          Cash (Nepali Rupees)
-                        </li>
+                        {personalItems.map((item, index) => (
+                          <li
+                            key={index}
+                            className="list-group-item border-0 py-1 bg-transparent"
+                          >
+                            {item}
+                          </li>
+                        ))}
                       </ul>
                     </div>
                   </div>

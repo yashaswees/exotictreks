@@ -10,9 +10,9 @@ const Navbar = () => {
       <div className="container">
         {/* Logo */}
         <NavLink to="/" className="navbar-brand fw-bold text-primary d-flex align-items-center">
-          <img 
-            src="/images/logo.png" 
-            alt="Exotic Treks & Expeditions Logo" 
+          <img
+            src="/images/logo.png"
+            alt="Exotic Treks & Expeditions Logo"
             style={{ height: "40px", marginRight: "10px" }}
           />
           Exotic Treks & Expeditions
@@ -65,16 +65,16 @@ const Navbar = () => {
                         {t("navbar.sightseeing")}
                       </NavLink>
                       <NavLink to="/plans/peak-climbing" className="dropdown-item py-2">
-                        Peak Climbing
+                        {t("peakClibmingPage.title")}
                       </NavLink>
                       <NavLink to="/plans/pilgrimage-tour" className="dropdown-item py-2">
-                        Pilgrimage Tour
+                        {t("pilgrimagePage.title")}
                       </NavLink>
                       <NavLink to="/plans/expeditions" className="dropdown-item py-2">
-                        Expeditions
+                        {t("expeditionPage.title")}
                       </NavLink>
                       <NavLink to="/plans/rafting" className="dropdown-item py-2">
-                        Rafting
+                        {t("raftingPage.title")}
                       </NavLink>
                     </div>
 
