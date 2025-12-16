@@ -32,7 +32,6 @@
     "indiaDesc": "Du Taj Mahal aux retraites spirituelles, l'Inde offre une diversité à chaque pas.",
     "bhutanDesc": "Découvrez des monastères paisibles, des paysages spectaculaires et un charme intemporel."
   },
-
   "footer": {
     "companyName": "Exotic Treks & Expeditions",
     "description": "Créant des expériences de voyage inoubliables à travers le Népal, l'Inde et le Tibet depuis 2005.",
@@ -53,7 +52,6 @@
     "email": "exotictreck@yahoo.com",
     "rights": "Tous droits réservés."
   },
-
   "contact": {
     "aboutTitle": "À propos de nous",
     "aboutText": "Avec plus de 20 ans d'expérience, Exotique Nepal est spécialisé dans la création de voyages inoubliables à travers le Népal, l'Inde et le Tibet. Des randonnées à couper le souffle aux riches expériences culturelles, nous créons des souvenirs de voyage qui durent toute une vie.",
@@ -69,7 +67,6 @@
     "addressLabel": "Adresse",
     "address": "Thamel, Katmandou, Népal"
   },
-
   "about": {
     "title": "À propos",
     "intro": "Exotic Treks & Expeditions guide les aventuriers à travers le Népal, le Tibet et l'Inde depuis plus de 20 ans. Notre équipe d'experts locaux assure des voyages sûrs, immersifs et durables.",
@@ -102,13 +99,11 @@
     },
     "galleryTitle": "Galerie"
   },
-
   "gallery": {
     "title": "Galerie",
     "subtitle": "Explorez des moments inoubliables de nos voyages.",
     "imageAlt": "Galerie"
   },
-
   "blogs": {
     "title": "Blogs",
     "annapurna": {
@@ -121,7 +116,6 @@
       "excerpt": "11 personnes en quête d'aventure ont exploré les paysages spectaculaires autour du Manaslu. Un trek exigeant et inoubliable."
     }
   },
-
   "contactPage": {
     "title": "Contactez-nous",
     "description": "Avec plus de 20 ans d'expérience, Exotique Nepal est spécialisé dans la création de voyages inoubliables au Népal, en Inde et au Tibet. Des treks à couper le souffle aux riches expériences culturelles, nous créons des moments de voyage qui restent à jamais gravés dans votre mémoire.",
@@ -137,5 +131,170 @@
     "phone": "+977-9841554895",
     "addressLabel": "Adresse",
     "address": "Thamel, Katmandou, Népal"
+  },
+  "peakClibmingPage": {
+    "title": "Escalade du sommet"
+  },
+  "pilgrimagePage": {
+    "title": "Pèlerinager"
+  },
+  "expeditionPage": {
+    "title": "Expéditions"
+  },
+  "raftingPage": {
+    "title": "Rafting",
+    "subHeroText": "Vivez des sensations fortes sur les rivières légendaires du Népal !",
+    "aboutText": "À propos du rafting au Népal",
+    "activityInfo": {
+      "name": "Rafting en eaux vives au Népal",
+      "difficulty": "Niveau 2 à 5+",
+      "bestSeason": "Oct.-déc. et mars-mai",
+      "groupSize": "4 à 12 personnes"
+    },
+    "aboutRafting": {
+      "p1": "Le Népal s'est forgé une réputation de destination incontournable pour le rafting en eaux vives. Descendre des rivières tumultueuses, au milieu de vagues déferlantes et de rapides tourbillonnants, promet des sensations fortes inoubliables. Pour certains, une descente en rafting est le point d'orgue de leur séjour au Népal.",
+      "p2": "Les eaux du Népal offrent des possibilités pour tous les niveaux : des rivières de classe 5 à 5+ avec des rapides tumultueux pour les plus téméraires, et des rivières de classe 2 à 3 avec quelques rapides pour les débutants. Les amateurs de rafting ont le choix entre des séjours de deux à trois semaines et des excursions de deux ou trois jours.",
+      "p3": "Les options incluent la navigation à la pagaie, à l'aviron et en kayak. La navigation à la pagaie requiert la participation de tous les passagers, sous la direction du guide. Des excursions de luxe de type safari, avec une équipe complète, sont également proposées. En barque à rames, le guide rame seul, permettant aux participants d'admirer le paysage. Le kayak est une autre façon de descendre la rivière ; certaines entreprises proposent à la location des kayaks gonflables ou en fibre de verre."
+    },
+    "quickFacts": {
+      "title": "Infos rapides",
+      "grades": "Classes de rivière",
+      "season": "Meilleure saison",
+      "group": "Taille du groupe"
+    },
+    "safetyInfo": {
+      "title": "Sécurité et préparation",
+      "description": "Une journée type sur la rivière commence tôt le matin, à l'arrivée des participants sur le site. Des consignes de sécurité et de conduite à tenir en cas d'urgence leur sont données avant le départ. Le port du gilet de sauvetage et du casque est obligatoire pendant toute la durée de l'excursion. Les repas sont fournis et certains forfaits incluent également le matériel de rivière et de camping. La meilleure période pour le rafting s'étend d'octobre à mi-décembre et de mars à début mai. En hiver, l'hypothermie peut représenter un obstacle pour certains. Pendant la mousson, de juin à septembre, les rapides sont dangereux, mais les portions plus calmes sont idéales pour le rafting. À ce jour, le gouvernement a ouvert des tronçons de 10 rivières à la pratique commerciale du rafting."
+    },
+    "riverTrips": {
+      "bhoteKoshi": {
+        "name": "Bhote Koshi River",
+        "duration": "2 jours",
+        "grade": "Niveau 4-5",
+        "description": "Le Bhote Kosi est connu comme la rivière venant du Tibet et vous pouvez commencer une excursion après un coup d'œil par-delà la frontière vers le Tibet. La route Katmandou / Lhassa (également connue sous le nom de Friendship Highway ou Arniko Highway) longe la rivière. Vous pouvez faire une excursion d'une journée ou une expédition de deux jours et descendre certaines parties de la rivière deux fois. C'est une excellente rivière pour débutants et amusante pour les kayakistes de tous niveaux. Bhote Koshi est une belle aventure avec une rivière de montagne très raide et pratiquement continue, à seulement 3 heures de route de Katmandou, offrant deux jours d'activités de rivière intenses et stimulantes.",
+        "highlights": [
+          "Seulement 3 heures de Katmandou",
+          "Vue sur la frontière tibétaine",
+          "Rapides intenses en eaux vives",
+          "Option pour une excursion d'une journée ou un périple de 2 jours"
+        ]
+      },
+      "kaliGandaki": {
+        "name": "Kali Gandaki River",
+        "duration": "3 jours",
+        "grade": "Niveau 3-4+",
+        "description": "Une excursion fluviale populaire et de longueur moyenne combinant des eaux vives exaltantes avec de magnifiques paysages. L'une des rivières himalayennes célèbres, la Kali Gandaki prend sa source à Mustang, une enclave du Népal donnant sur le Tibet de l'autre côté de l'Himalaya. En descendant entre les majestueuses chaînes du Dhaulagiri et de l'Annapurna, elle crée l'une des gorges les plus profondes du monde. Toute la journée, vous pagayez continuellement contre des rapides techniques. Les rafteurs expérimentés et débutants adorent cette rivière. Nulle part ailleurs il n'est possible de trouver une telle diversité sur un parcours de 3 jours. De belles chutes, des rapides étincelants et turbulents offrent des parcours de classe III à IV+ pendant les saisons d'automne et de printemps.",
+        "highlights": [
+          "Paysage de gorge la plus profonde du monde",
+          "Vues sur Dhaulagiri et l'Annapurna",
+          "Combinaison de rapides techniques et ludiques",
+          "Option pour visiter Chitwan ou faire un trek ensuite"
+        ]
+      },
+      "marshyangdi": {
+        "name": "Marshyangdi River",
+        "duration": "5 jours",
+        "grade": "Niveau 4-5",
+        "description": "Le Marshyangdi est une rivière tumultueuse au Népal et décrit l'une des meilleures descentes en eaux vives du monde. L'une des meilleures rivières pour kayak de classe 4 dans le monde - eaux vives continues et exaltantes avec de magnifiques paysages montagneux. Recommandée pour les kayakistes et rafteurs experts. Si vous recherchez l'aventure, vous la trouverez dans ce parcours avec une journée de randonnée facile et cinq jours de rafting intense. Récemment ouverte au rafting commercial, de nombreux rapides n'ont pas encore de nom, le Marshyangdi est une rivière de nouvelle génération au Népal, plus raide et avec une étendue de rapides plus continue.",
+        "highlights": [
+          "L'une des meilleures descentes en eaux vives au monde",
+          "Superbes paysages montagneux",
+          "Récemment ouverte pour le rafting commercial",
+          "Inclut une journée de randonnée"
+        ]
+      },
+      "seti": {
+        "name": "Seti River",
+        "duration": "2 jours",
+        "grade": "Niveau 2-3",
+        "description": "La rivière Seti offre de magnifiques vues sur les montagnes et traverse deux zones pittoresques contrastées des régions de Manaslu et de l'Annapurna. Cette rivière a un volume relativement faible mais une eau bleue et chaude, idéale pour les rafteurs débutants ou comme échauffement pour les kayakistes intermédiaires. Seti est la meilleure rivière pour apprendre le kayak au Népal. La température de l'eau est incroyablement chaude, ce qui en fait un choix populaire pour les excursions d'hiver et les cliniques de kayak. La plupart de l'année, le Seti est une rivière douce, attirant familles, observateurs d'oiseaux, amoureux de la nature et rêveurs. La végétation luxuriante le long de la rivière est un vestige de la vaste forêt qui recouvrait autrefois les collines centrales du Népal.",
+        "highlights": [
+          "Parfait pour les débutants et les familles",
+          "Eau chaude - idéal pour les excursions d'hiver",
+          "Meilleure rivière pour apprendre le kayak",
+          "Superbes vues sur Manaslu et l'Annapurna"
+        ]
+      },
+      "sunKoshi": {
+        "name": "Sun Koshi River",
+        "duration": "9 jours",
+        "grade": "Niveau 3-5",
+        "description": "L'une des 10 expéditions en eaux vives les plus classiques et meilleures du monde, le Sunkoshi (rivière d'or) offre le parcours fluvial le plus long au Népal et est le plus fascinant parmi les rivières descendant des montagnes enneigées. De grands rapides, de l'eau chaude, de magnifiques paysages et un excellent camping font de cette excursion un parcours fluvial multi-jours classique. Cette expédition de 9 jours sera certainement le point fort de votre visite au Népal. Le Sunkoshi est une rivière imprévisible avec ses propres humeurs - sereine, calme et tranquille un instant, sauvage et turbulente le suivant, toujours changeante, toujours stimulante. En seulement 9 jours, vous êtes en contact étroit avec la beauté naturelle, les habitants, la culture, la faune et les rivières du Népal.",
+        "highlights": [
+          "L'un des 10 meilleurs parcours fluviaux classiques au monde",
+          "Le plus long parcours fluvial du Népal",
+          "250 espèces d'orchidées et 400 espèces d'oiseaux",
+          "Découvrez diverses cultures ethniques"
+        ]
+      },
+      "trishuli": {
+        "name": "Trishuli River",
+        "duration": "3 jours",
+        "grade": "Niveau 2-3",
+        "description": "Le rafting sur la rivière Trishuli est une excellente opportunité pour observer la diversité de la démographie, des paysages, du patrimoine culturel et de la flore et faune. La Trishuli est la rivière la plus facilement accessible depuis Katmandou, Pokhara et le parc national royal de Chitwan. Une excursion sur cette rivière peut durer selon le temps disponible et l'intérêt. Vallées pittoresques et gorges impressionnantes, rapides exaltants et sections plus faciles ainsi que la bonne durée font de ce parcours l'excursion parfaite pour les rafteurs débutants ou expérimentés.",
+        "highlights": [
+          "Rivière la plus accessible depuis les principales villes",
+          "Parfait pour tous les niveaux",
+          "Vallées pittoresques et gorges impressionnantes",
+          "Options de durée flexibles"
+        ]
+      }
+    },
+    "inclusions": {
+      "includedTitle": "Ce qui est inclus",
+      "excludedTitle": "Ce qui n’est pas inclus",
+      "included": [
+        "Guide de rivière professionnel et kayakistes de sécurité",
+        "Tout l’équipement de rafting (radeau, pagaies, casques, gilets de sauvetage)",
+        "Équipement de camping (tentes, sacs de couchage, matelas)",
+        "Tous les repas pendant le séjour",
+        "Transport vers et depuis les points de mise à l’eau et de sortie",
+        "Trousse de premiers secours et équipement de sécurité",
+        "Permis et frais"
+      ],
+      "excluded": [
+        "Assurance voyage personnelle (obligatoire)",
+        "Dépenses personnelles",
+        "Pourboires et gratifications",
+        "Boissons alcoolisées",
+        "Équipement personnel (maillot de bain, sandales, crème solaire)",
+        "Toute dépense résultant de circonstances imprévues"
+      ]
+    },
+    "whatToBring": {
+      "title": "Que faut-il apporter",
+      "clothing": {
+        "title": "Vêtements",
+        "items": [
+          "Shorts ou pantalons à séchage rapide",
+          "T-shirts synthétiques",
+          "Maillot de bain",
+          "Polaire légère ou veste",
+          "Sandales de rivière avec sangles",
+          "Chapeau avec sangle"
+        ]
+      },
+      "waterproof": {
+        "title": "Équipement imperméable",
+        "items": [
+          "Sac étanche / dry bag",
+          "Étui imperméable pour appareil photo",
+          "Crème solaire imperméable (SPF 50+)",
+          "Lunettes de soleil avec cordon",
+          "Veste de pluie"
+        ]
+      },
+      "personal": {
+        "title": "Articles personnels",
+        "items": [
+          "Médicaments personnels",
+          "Répulsif anti-insectes",
+          "Baume à lèvres avec SPF",
+          "Serviette à séchage rapide",
+          "Lampe frontale ou torche",
+          "Argent liquide (roupies népalaises)"
+        ]
+      }
+    }
   }
 }
