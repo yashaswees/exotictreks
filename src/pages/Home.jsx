@@ -17,7 +17,7 @@ const Home = () => {
       <Destinations />
       <section className=" py-5">
         <div className="container">
-          <h1 className="text-center fw-bold mb-5">What Our Travelers Say</h1>
+          <h1 className="text-center fw-bold mb-5">What Our Travelers Says</h1>
           <div className="row g-4">
             {[
               {
