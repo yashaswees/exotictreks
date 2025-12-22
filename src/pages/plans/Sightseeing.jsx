@@ -7,7 +7,7 @@ const Sightseeing = () => {
     <>
       <Navbar />
       <div className="container my-5">
-        <h1 className="fw-bold mb-4">Sightseeing</h1>
+        <h1 className="fw-bold mb-4">Sightseeings</h1>
         <p className="text-muted">Content coming soon...</p>
       </div>
       <Footer />
