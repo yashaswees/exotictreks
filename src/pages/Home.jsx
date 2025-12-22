@@ -17,7 +17,7 @@ const Home = () => {
       <Destinations />
       <section className=" py-5">
         <div className="container">
-          <h1 className="text-center fw-bold mb-5">What Our Travelers Say</h1>
+          <h1 className="text-center fw-bold mb-5">What Our Travelers Says</h1>
           <div className="row g-4">
             {[
               {
@@ -57,7 +57,7 @@ const Home = () => {
         </div>
         <section className="py-5">
           <h1 className="text-center fw-bold mb-5">
-            Partners and Certificationss
+            Partners and Certifications
           </h1>
           <Marquee />
         </section>

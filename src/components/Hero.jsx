@@ -1,6 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import heroImage from "../assets/herosection.jpg";
+import { NavLink } from "react-router-dom";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -31,9 +32,12 @@ const Hero = () => {
           <a href="#destinations" className="btn btn-light btn-lg px-4 py-2">
             {t("hero.exploreButton")}
           </a>
-          <a href="contact-us" className="btn btn-outline-light btn-lg px-4 py-2">
+          <NavLink
+            to="/contact-us"
+            className="btn btn-outline-light btn-lg px-4 py-2"
+          >
             {t("hero.planButton")}
-          </a>
+          </NavLink>
         </div>
 
         {/* Stats */}
