@@ -5,93 +5,16 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { MdPhone, MdLocationOn } from "react-icons/md";
 import { IoMail } from "react-icons/io5";
 import { useTranslation } from "react-i18next";
+import Contact from "../components/Contact";
 
-function Contact() {
+function ContactPage() {
   const { t } = useTranslation();
 
   return (
     <>
       <Navbar />
       <div className="container my-5">
-        <div className="info-card">
-          <div className="card-content">
-            <h2 className="fw-bold">{t("contactPage.title")}</h2>
-            <div className="title-underline"></div>
-
-            <div className="d-flex gap-5 flex-wrap">
-              {/* Left side text and badges */}
-              <div className="w-100 w-md-50">
-                <p className="card-text">{t("contactPage.description")}</p>
-                <div className="d-flex gap-5">
-                  <div className="experience-badge w-50">
-                    <span className="years">{t("contactPage.experienceYears")}</span>
-                    <span className="label">{t("contactPage.experienceLabel")}</span>
-                  </div>
-                  <div className="experience-badge w-50">
-                    <span className="years">{t("contactPage.customers")}</span>
-                    <span className="label">{t("contactPage.customerLabel")}</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Right side contact details */}
-              <div className="d-flex flex-column w-100 w-md-50">
-                <ul className="contact-list">
-                  <li className="contact-item">
-                    <IoMail className="email-icon contact-icon" />
-                    <div className="contact-details">
-                      <span className="contact-label">{t("contactPage.emailLabel")}</span>
-                      <a
-                        href={`mailto:${t("contactPage.email")}`}
-                        className="contact-value"
-                      >
-                        {t("contactPage.email")}
-                      </a>
-                    </div>
-                  </li>
-                  <li className="contact-item">
-                    <IoLogoWhatsapp className="contact-icon whatsapp-icon" />
-                    <div className="contact-details">
-                      <span className="contact-label">{t("contactPage.whatsappLabel")}</span>
-                      <a
-                        href="https://wa.me/9779841554895"
-                        className="contact-value"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {t("contactPage.whatsappMessage")}
-                      </a>
-                    </div>
-                  </li>
-                  <li className="contact-item">
-                    <MdPhone className="contact-icon phone-icon" />
-                    <div className="contact-details">
-                      <span className="contact-label">{t("contactPage.phoneLabel")}</span>
-                      <a href={`tel:${t("contactPage.phone")}`} className="contact-value">
-                        {t("contactPage.phone")}
-                      </a>
-                    </div>
-                  </li>
-                  <li className="contact-item">
-                    <MdLocationOn className="contact-icon address-icon" />
-                    <div className="contact-details">
-                      <span className="contact-label">{t("contactPage.addressLabel")}</span>
-                      <span className="grey-text">
-                        <a
-                          href="https://maps.app.goo.gl/GsMc7krxVEDPLgeN8"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {t("contactPage.address")}
-                        </a>
-                      </span>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+       <Contact/>
 
         {/* Google Map */}
         <div
@@ -120,4 +43,4 @@ function Contact() {
   );
 }
 
-export default Contact;
+export default ContactPage;

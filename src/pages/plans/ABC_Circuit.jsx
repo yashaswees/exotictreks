@@ -9,142 +9,164 @@ import Navbar from "../../components/Navbar";
 import { CiMountain1 } from "react-icons/ci";
 import Footer from "../../components/Footer";
 import { TbShoe } from "react-icons/tb";
+import { useTranslation } from "react-i18next";
 
 const AnnapurnaCircuitJomsomTrek = () => {
+  const { t } = useTranslation();
+  
   const trekInfo = {
-    name: "Annapurna Circuit (Jomsom) & Poon Hill Trek",
+    name: t("annapurnaCircuitJomsom.hero.name"),
     duration: "14 days",
-    difficulty: "Moderate to Challenging",
+    difficulty: t("annapurnaCircuitJomsom.difficulty.moderateChallenging"),
     maxAltitude: "3,800 meters (12,467 feet)",
     bestSeason: "March-May & September-November",
     permits: [
-      "ACAP (Annapurna Conservation Area Permit)",
-      "TIMS Card (Trekkers' Information Management System)",
+      t("annapurnaCircuitJomsom.permits.permitsList.0"),
+      t("annapurnaCircuitJomsom.permits.permitsList.1"),
     ],
     highlights: [
-      "World-famous sunrise view from Poon Hill (3,210m)",
-      "Sacred Muktinath Temple - pilgrimage site for Hindus and Buddhists",
-      "Trek through the world's deepest gorge - Kali Gandaki",
-      "Natural hot springs at Tatopani",
-      "Scenic flight between Annapurna and Dhaulagiri to Jomsom",
-      "Beautiful apple orchards in Marpha village",
+      t("annapurnaCircuitJomsom.highlights.highlightsList.0"),
+      t("annapurnaCircuitJomsom.highlights.highlightsList.1"),
+      t("annapurnaCircuitJomsom.highlights.highlightsList.2"),
+      t("annapurnaCircuitJomsom.highlights.highlightsList.3"),
+      t("annapurnaCircuitJomsom.highlights.highlightsList.4"),
+      t("annapurnaCircuitJomsom.highlights.highlightsList.5"),
     ],
   };
 
   const itinerary = [
     {
       day: 1,
-      title: "Arrival in Kathmandu (1,350m)",
-      description:
-        "Upon your arrival at Tribhuvan International Airport, you will be greeted by a representative and transferred to your hotel. The day is free to relax and recover from your journey. In the evening, you'll have a briefing with your trekking guide about the upcoming adventure.",
+      title: t("annapurnaCircuitJomsom.itinerary.day1.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day1.description"),
       distance: "N/A",
       duration: "N/A",
     },
     {
       day: 2,
-      title: "Drive from Kathmandu to Pokhara (820m)",
-      description:
-        "A scenic 6-7 hour drive by tourist bus takes you to the beautiful lakeside city of Pokhara. You'll enjoy stunning views of terraced hillsides, rivers, and on a clear day, the Himalayan panorama. The rest of the day is free to explore Pokhara's famous Phewa Lake.",
+      title: t("annapurnaCircuitJomsom.itinerary.day2.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day2.description"),
       distance: "200 km",
       duration: "6-7 hours drive",
     },
     {
       day: 3,
-      title: "Fly to Jomsom (2,713m) & Trek to Kagbeni (2,800m)",
-      description:
-        "An early morning, spectacular 20-minute flight takes you between the giants Annapurna and Dhaulagiri to land in Jomsom, the wind-swept capital of the Mustang region. After breakfast in Jomsom, you begin your trek, following the Kali Gandaki riverbed (the world's deepest gorge) to the ancient village of Kagbeni. This town is the gateway to Upper Mustang and has a distinct medieval Tibetan feel.",
+      title: t("annapurnaCircuitJomsom.itinerary.day3.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day3.description"),
       distance: "11 km",
       duration: "20 min flight, 3-4 hours trek",
     },
     {
       day: 4,
-      title: "Trek from Kagbeni to Muktinath (3,800m)",
-      description:
-        "The trail climbs steadily out of Kagbeni, offering dramatic views of the arid landscape that resembles Tibet. You'll pass through Jharkot, a village with a picturesque fortress. Your destination is Muktinath, one of the most sacred pilgrimage sites for both Hindus and Buddhists.",
+      title: t("annapurnaCircuitJomsom.itinerary.day4.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day4.description"),
       distance: "9 km",
       duration: "5-6 hours",
     },
     {
       day: 5,
-      title: "Explore Muktinath (3,800m)",
-      description:
-        "This is an acclimatization and exploration day. Visit the holy Muktinath Temple complex, which features 108 water spouts and a perpetual flame fueled by natural gas. The views of Dhaulagiri, Tukuche Peak, and Nilgiri are breathtaking. This rest day is crucial for adapting to the altitude.",
+      title: t("annapurnaCircuitJomsom.itinerary.day5.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day5.description"),
       distance: "N/A",
       duration: "Rest day",
     },
     {
       day: 6,
-      title: "Trek from Muktinath to Marpha (2,660m)",
-      description:
-        "A long but rewarding descent back into the Kali Gandaki Valley. You'll trek down to Jomsom and then continue to the beautiful village of Marpha, famous for its clean flagstone streets, whitewashed houses, and apple orchards. Don't miss trying the local apple brandy, cider, or pie.",
+      title: t("annapurnaCircuitJomsom.itinerary.day6.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day6.description"),
       distance: "20 km",
       duration: "5-6 hours",
     },
     {
       day: 7,
-      title: "Trek from Marpha to Kalopani (2,530m)",
-      description:
-        "The trail continues south, descending through several villages like Tukuche and Larjung. The landscape begins to change, with more pine forests and views of the towering Dhaulagiri ice-fall. Kalopani offers one of the best panoramic mountain views of the entire trek.",
+      title: t("annapurnaCircuitJomsom.itinerary.day7.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day7.description"),
       distance: "14 km",
       duration: "5-6 hours",
     },
     {
       day: 8,
-      title: "Trek from Kalopani to Tatopani (1,190m)",
-      description:
-        "A long descent today as you leave the dry, high desert and enter a lush, subtropical climate. You'll cross several suspension bridges and pass through Ghasa. Your reward at the end of the day is Tatopani, which means 'hot water,' where you can soak your tired muscles in the natural hot springs by the river.",
+      title: t("annapurnaCircuitJomsom.itinerary.day8.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day8.description"),
       distance: "22 km",
       duration: "6-7 hours",
     },
     {
       day: 9,
-      title: "Trek from Tatopani to Ghorepani (2,855m)",
-      description:
-        "This is one of the toughest days as you climb steeply out of the Kali Gandaki valley. The trail ascends through beautiful rhododendron forests (which are spectacular when in bloom around March-April) and terraced farms. You'll pass through Shikha and Chitre before reaching the bustling trekking hub of Ghorepani.",
+      title: t("annapurnaCircuitJomsom.itinerary.day9.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day9.description"),
       distance: "14 km",
       duration: "7-8 hours",
     },
     {
       day: 10,
-      title: "Hike to Poon Hill (3,210m) and Rest Day",
-      description:
-        "An early pre-dawn start for a 1-hour steep hike to Poon Hill. Your effort is rewarded with one of the most famous sunrise views in the world, a 360-degree panorama that includes Dhaulagiri, Annapurna I, Annapurna South, Machhapuchhre (Fishtail), and many more peaks. After taking in the views, you descend to Ghorepani for breakfast. The rest of the day is for relaxing and enjoying the mountain atmosphere.",
+      title: t("annapurnaCircuitJomsom.itinerary.day10.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day10.description"),
       distance: "4 km",
       duration: "2-3 hours round trip",
     },
     {
       day: 11,
-      title: "Trek from Ghorepani to Birethanti & Drive to Pokhara",
-      description:
-        "Your final day of trekking takes you down through magnificent forests to Birethanti, a large village at the confluence of two rivers. After completing the trek, you'll drive for about 1.5 hours back to Pokhara. The evening is free to celebrate your accomplishment.",
+      title: t("annapurnaCircuitJomsom.itinerary.day11.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day11.description"),
       distance: "16 km",
       duration: "5-6 hours trek, 1.5 hours drive",
     },
     {
       day: 12,
-      title: "Drive from Pokhara to Kathmandu",
-      description:
-        "Enjoy a final morning in Pokhara. You then take the tourist bus back to Kathmandu. Upon arrival, check into your hotel and enjoy a farewell dinner (if included in your package).",
+      title: t("annapurnaCircuitJomsom.itinerary.day12.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day12.description"),
       distance: "200 km",
       duration: "6-7 hours drive",
     },
     {
       day: 13,
-      title: "Free Day in Kathmandu",
-      description:
-        "A contingency day for flight delays or simply a day for sightseeing, souvenir shopping, or exploring Kathmandu's UNESCO World Heritage Sites like Durbar Square, Swayambhunath (Monkey Temple), or Pashupatinath.",
+      title: t("annapurnaCircuitJomsom.itinerary.day13.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day13.description"),
       distance: "N/A",
       duration: "N/A",
     },
     {
       day: 14,
-      title: "Final Departure",
-      description:
-        "You will be transferred to the airport approximately 3 hours before your scheduled flight back home.",
+      title: t("annapurnaCircuitJomsom.itinerary.day14.title"),
+      description: t("annapurnaCircuitJomsom.itinerary.day14.description"),
       distance: "N/A",
       duration: "N/A",
     },
   ];
+
+  const packingItems = {
+    clothing: [
+      t("annapurnaCircuitJomsom.packing.clothing.items.0"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.1"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.2"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.3"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.4"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.5"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.6"),
+      t("annapurnaCircuitJomsom.packing.clothing.items.7"),
+    ],
+    footwear: [
+      t("annapurnaCircuitJomsom.packing.footwear.items.0"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.1"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.2"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.3"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.4"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.5"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.6"),
+      t("annapurnaCircuitJomsom.packing.footwear.items.7"),
+    ],
+    personal: [
+      t("annapurnaCircuitJomsom.packing.personal.items.0"),
+      t("annapurnaCircuitJomsom.packing.personal.items.1"),
+      t("annapurnaCircuitJomsom.packing.personal.items.2"),
+      t("annapurnaCircuitJomsom.packing.personal.items.3"),
+      t("annapurnaCircuitJomsom.packing.personal.items.4"),
+      t("annapurnaCircuitJomsom.packing.personal.items.5"),
+      t("annapurnaCircuitJomsom.packing.personal.items.6"),
+      t("annapurnaCircuitJomsom.packing.personal.items.7"),
+    ],
+  };
 
   // State to track the active accordion item
   const [activeKey, setActiveKey] = useState("0");
@@ -160,13 +182,13 @@ const AnnapurnaCircuitJomsomTrek = () => {
               <img
                 src={img2}
                 className="img-fluid rounded shadow-sm object-fit-cover"
-                alt="Annapurna Base Camp Trek"
+                alt={t("annapurnaCircuitJomsom.hero.name")}
               />
             </div>
             <div className="position-absolute bottom-0 start-0 p-4 text-white">
               <h1 className="fw-bold">{trekInfo.name}</h1>
               <p className="lead">
-                Journey through the world's deepest gorge to sacred temples and stunning sunrise views
+                {t("annapurnaCircuitJomsom.hero.tagline")}
               </p>
             </div>
           </div>
@@ -182,21 +204,14 @@ const AnnapurnaCircuitJomsomTrek = () => {
               }}
             >
               <div className="card-body">
-                <h2 className="card-title fw-bold">Trek Overview</h2>
+                <h2 className="card-title fw-bold">
+                  {t("annapurnaCircuitJomsom.overview.title")}
+                </h2>
                 <p className="card-text">
-                  The Annapurna Circuit (Jomsom) & Poon Hill Trek combines the
-                  best of Nepal's trekking experiences. Starting with a scenic
-                  flight to Jomsom, you'll trek through the world's deepest
-                  gorge - the Kali Gandaki Valley, visit the sacred Muktinath
-                  Temple, and witness the world-famous sunrise from Poon Hill.
+                  {t("annapurnaCircuitJomsom.overview.p1")}
                 </p>
                 <p className="card-text">
-                  This trek offers incredible diversity - from the arid,
-                  Tibetan-like landscapes of Upper Mustang to lush rhododendron
-                  forests and traditional Nepali villages. You'll experience
-                  natural hot springs at Tatopani, apple orchards in Marpha,
-                  and panoramic views of Dhaulagiri, Annapurna, and
-                  Machhapuchhre peaks throughout the journey.
+                  {t("annapurnaCircuitJomsom.overview.p2")}
                 </p>
               </div>
             </div>
@@ -208,7 +223,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
               style={{ background: "#f8f9fa" }}
             >
               <div className="card-body">
-                <h3 className="card-title fw-bold mb-4">Quick Facts</h3>
+                <h3 className="card-title fw-bold mb-4">
+                  {t("annapurnaCircuitJomsom.quickFacts.title")}
+                </h3>
 
                 <div
                   className="quick-fact-item d-flex align-items-center mb-3 p-2 rounded"
@@ -224,7 +241,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Duration</div>
+                    <div className="text-muted small">
+                      {t("annapurnaCircuitJomsom.quickFacts.duration")}
+                    </div>
                     <div className="fw-medium">{trekInfo.duration}</div>
                   </div>
                 </div>
@@ -243,7 +262,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
                     />
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Max Altitude</div>
+                    <div className="text-muted small">
+                      {t("annapurnaCircuitJomsom.quickFacts.maxAltitude")}
+                    </div>
                     <div className="fw-medium">{trekInfo.maxAltitude}</div>
                   </div>
                 </div>
@@ -262,7 +283,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Difficulty</div>
+                    <div className="text-muted small">
+                      {t("annapurnaCircuitJomsom.quickFacts.difficulty")}
+                    </div>
                     <div className="fw-medium">{trekInfo.difficulty}</div>
                   </div>
                 </div>
@@ -281,7 +304,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-8">
-                    <h3 className="card-title fw-bold">Trek Difficulty</h3>
+                    <h3 className="card-title fw-bold">
+                      {t("annapurnaCircuitJomsom.difficulty.title")}
+                    </h3>
                     <div className="d-flex align-items-center mb-3">
                       <h4 className="me-3 mb-0">
                         <span className="badge bg-light text-primary border border-primary">
@@ -290,23 +315,15 @@ const AnnapurnaCircuitJomsomTrek = () => {
                       </h4>
                     </div>
                     <p className="card-text">
-                      The Annapurna Circuit (Jomsom) & Poon Hill trek is rated
-                      as moderate to challenging. While it doesn't involve
-                      technical climbing, you'll need good physical fitness to
-                      handle:
+                      {t("annapurnaCircuitJomsom.difficulty.description")}
                     </p>
                     <ul>
-                      <li>Daily walking of 5-8 hours</li>
-                      <li>
-                        Steep ascents, particularly from Tatopani to Ghorepani
-                      </li>
-                      <li>Altitude gain (maximum 3,800m at Muktinath)</li>
-                      <li>Varying weather and terrain conditions</li>
+                      {t("annapurnaCircuitJomsom.difficulty.points", { returnObjects: true }).map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
                     </ul>
                     <p className="card-text">
-                      Prior trekking experience is helpful but not required.
-                      An acclimatization day at Muktinath is built into the
-                      itinerary to minimize altitude sickness risk.
+                      {t("annapurnaCircuitJomsom.difficulty.note")}
                     </p>
                   </div>
                   <div className="col-md-4">
@@ -315,11 +332,11 @@ const AnnapurnaCircuitJomsomTrek = () => {
                       <img
                         src={img1}
                         className="img-fluid rounded shadow-sm object-fit-cover"
-                        alt="Annapurna Base Camp"
+                        alt={t("annapurnaCircuitJomsom.muktinathImageAlt")}
                       />
                     </div>
                     <p className="text-center small mt-2 text-muted">
-                      Muktinath Temple at 3,800m
+                      {t("annapurnaCircuitJomsom.muktinathImageAlt")}
                     </p>
                   </div>
                 </div>
@@ -340,7 +357,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-clipboard-check text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">Required Permits</h3>
+                  <h3 className="card-title fw-bold mb-0">
+                    {t("annapurnaCircuitJomsom.permits.title")}
+                  </h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {trekInfo.permits.map((permit, index) => (
@@ -355,8 +374,7 @@ const AnnapurnaCircuitJomsomTrek = () => {
                 </ul>
                 <div className="alert alert-light border mt-3">
                   <i className="bi bi-info-circle-fill text-primary me-2"></i>
-                  Permits can be arranged through your trekking agency or
-                  obtained in Kathmandu/Pokhara.
+                  {t("annapurnaCircuitJomsom.permits.note")}
                 </div>
               </div>
             </div>
@@ -373,7 +391,9 @@ const AnnapurnaCircuitJomsomTrek = () => {
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-star text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">Trek Highlights</h3>
+                  <h3 className="card-title fw-bold mb-0">
+                    {t("annapurnaCircuitJomsom.highlights.title")}
+                  </h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {trekInfo.highlights.map((highlight, index) => (
@@ -405,7 +425,7 @@ const AnnapurnaCircuitJomsomTrek = () => {
                     style={{ fontSize: "1.2rem" }}
                   ></i>
                   <h2 className="card-title fw-bold mb-0">
-                    Detailed Itinerary
+                    {t("annapurnaCircuitJomsom.itinerary.title")}
                   </h2>
                 </div>
               </div>
@@ -441,12 +461,16 @@ const AnnapurnaCircuitJomsomTrek = () => {
                             <div className="bg-light p-2 rounded small">
                               <div className="mb-1">
                                 <i className="bi bi-arrows-move me-1 text-primary"></i>
-                                <span className="fw-medium">Distance:</span>{" "}
+                                <span className="fw-medium">
+                                  {t("annapurnaCircuitJomsom.itinerary.distance")}:
+                                </span>{" "}
                                 {day.distance}
                               </div>
                               <div>
                                 <i className="bi bi-clock me-1 text-primary"></i>
-                                <span className="fw-medium">Duration:</span>{" "}
+                                <span className="fw-medium">
+                                  {t("annapurnaCircuitJomsom.itinerary.duration")}:
+                                </span>{" "}
                                 {day.duration}
                               </div>
                             </div>
@@ -476,7 +500,7 @@ const AnnapurnaCircuitJomsomTrek = () => {
                     <i className="bi bi-backpack text-primary"></i>
                   </div>
                   <h3 className="card-title fw-bold mb-0">
-                    Essential Packing List
+                    {t("annapurnaCircuitJomsom.packing.title")}
                   </h3>
                 </div>
                 <div className="row">
@@ -489,33 +513,14 @@ const AnnapurnaCircuitJomsomTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <i className="bi bi-layers me-2 text-primary"></i>
-                            Clothing
+                            {t("annapurnaCircuitJomsom.packing.clothing.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Moisture-wicking t-shirts
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Trekking pants (convertible recommended)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Insulating mid-layers (fleece/down)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Waterproof jacket and pants
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Thermal base layers
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Hiking socks (3-4 pairs)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Warm hat and gloves
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sun hat
-                            </li>
+                            {packingItems.clothing.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -526,33 +531,14 @@ const AnnapurnaCircuitJomsomTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <TbShoe className=" me-2 text-primary"/>
-                            Footwear & Gear
+                            {t("annapurnaCircuitJomsom.packing.footwear.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Waterproof hiking boots (broken in)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Camp shoes/sandals
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Trekking poles
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Backpack (40-50L)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sleeping bag (-10°C comfort rating)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Headlamp with spare batteries
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Water bottles (2L capacity)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sunglasses (UV protection)
-                            </li>
+                            {packingItems.footwear.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -563,33 +549,14 @@ const AnnapurnaCircuitJomsomTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <i className="bi bi-bandaid me-2 text-primary"></i>
-                            Personal Items
+                            {t("annapurnaCircuitJomsom.packing.personal.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              First aid kit
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Prescription medications
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Altitude sickness medication
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sunscreen and lip balm
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Hand sanitizer
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Toilet paper
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Quick-dry towel
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Camera with extra batteries
-                            </li>
+                            {packingItems.personal.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>

@@ -9,6 +9,7 @@
     "happyTravelers": "Happy Travelers",
     "exoticCountries": "Exotic Countries"
   },
+
   "navbar": {
     "itinerary": "Itinerary",
     "activities": "Activities",
@@ -19,12 +20,36 @@
     "popularPackages": "Popular Packages",
     "annapurna7Day": "7-Day Annapurna Trek",
     "everest10Day": "10-Day Everest Adventure",
-    "wildlifeSafari": "Wildlife Safari Package",
+    "wildlifeSafari": "Wildlife Safari",
     "gallery": "Gallery",
     "blogs": "Blogs",
-    "about": "About Us",
-    "contact": "Contact Us",
-    "bookNow": "Book Now"
+    "about": "About",
+    "contact": "Contact",
+    "bookNow": "Book Now",
+    "peakClimbing": "Peak Climbing",
+    "pilgrimageTour": "Pilgrimage Tour",
+    "expeditions": "Expeditions",
+    "rafting": "Rafting",
+    "birdWatching": "Bird Watching",
+    "visitNepal": "Visit Nepal",
+    "annapurnaBaseCamp": "Annapurna Base Camp",
+    "annapurnaCircuit": "Annapurna Circuit",
+    "larkeLaPass": "Larke La Pass",
+    "everestTrek": "Everest Trek",
+    "everestClassic": "Everest Classic Trek",
+    "everestBaseCamp": "Everest Base Camp",
+    "everestFoothill": "Everest Foothill Trek",
+    "everestKalapathar": "Everest Kalapathar Trek",
+    "everestTengboche": "Everest Tengboche Trek",
+    "imjaTse": "Imja Tse Trek",
+    "manasluCircuit": "Manaslu Circuit",
+    "langtangTrek": "Langtang Trek",
+    "langtangGanjala": "Langtang Valley: Ganjala",
+    "langtangGosaikunda": "Langtang Valley: Gosaikunda",
+    "langtangValley": "Langtang Valley Trek",
+    "rubyValley": "Ruby Valley Trek",
+    "mustangTrek": "Mustang Trek",
+    "dhaulagiriTrek": "Dhaulagiri Trek"
   },
   "destinations": {
     "title": "Top Destinations",
@@ -141,6 +166,328 @@
   "expeditionPage": {
     "title": "Expeditions"
   },
+
+  "annapurnaCircuitJomsom": {
+    "hero": {
+      "name": "Annapurna Circuit (Jomsom) & Poon Hill Trek",
+      "tagline": "Journey through the world's deepest gorge to sacred temples and stunning sunrise views"
+    },
+    "overview": {
+      "title": "Trek Overview",
+      "p1": "The Annapurna Circuit (Jomsom) & Poon Hill Trek combines the best of Nepal's trekking experiences. Starting with a scenic flight to Jomsom, you'll trek through the world's deepest gorge - the Kali Gandaki Valley, visit the sacred Muktinath Temple, and witness the world-famous sunrise from Poon Hill.",
+      "p2": "This trek offers incredible diversity - from the arid, Tibetan-like landscapes of Upper Mustang to lush rhododendron forests and traditional Nepali villages. You'll experience natural hot springs at Tatopani, apple orchards in Marpha, and panoramic views of Dhaulagiri, Annapurna, and Machhapuchhre peaks throughout the journey."
+    },
+    "quickFacts": {
+      "title": "Quick Facts",
+      "duration": "Duration",
+      "maxAltitude": "Max Altitude",
+      "difficulty": "Difficulty"
+    },
+    "difficulty": {
+      "title": "Trek Difficulty",
+      "description": "The Annapurna Circuit (Jomsom) & Poon Hill trek is rated as moderate to challenging. While it doesn't involve technical climbing, you'll need good physical fitness to handle:",
+      "points": [
+        "Daily walking of 5-8 hours",
+        "Steep ascents, particularly from Tatopani to Ghorepani",
+        "Altitude gain (maximum 3,800m at Muktinath)",
+        "Varying weather and terrain conditions"
+      ],
+      "note": "Prior trekking experience is helpful but not required. An acclimatization day at Muktinath is built into the itinerary to minimize altitude sickness risk.",
+      "moderateChallenging": "Moderate to Challenging"
+    },
+    "permits": {
+      "title": "Required Permits",
+      "permitsList": [
+        "ACAP (Annapurna Conservation Area Permit)",
+        "TIMS Card (Trekkers' Information Management System)"
+      ],
+      "note": "Permits can be arranged through your trekking agency or obtained in Kathmandu/Pokhara."
+    },
+    "highlights": {
+      "title": "Trek Highlights",
+      "highlightsList": [
+        "World-famous sunrise view from Poon Hill (3,210m)",
+        "Sacred Muktinath Temple - pilgrimage site for Hindus and Buddhists",
+        "Trek through the world's deepest gorge - Kali Gandaki",
+        "Natural hot springs at Tatopani",
+        "Scenic flight between Annapurna and Dhaulagiri to Jomsom",
+        "Beautiful apple orchards in Marpha village"
+      ]
+    },
+    "itinerary": {
+      "title": "Detailed Itinerary",
+      "distance": "Distance",
+      "duration": "Duration",
+      "day1": {
+        "title": "Arrival in Kathmandu (1,350m)",
+        "description": "Upon your arrival at Tribhuvan International Airport, you will be greeted by a representative and transferred to your hotel. The day is free to relax and recover from your journey. In the evening, you'll have a briefing with your trekking guide about the upcoming adventure."
+      },
+      "day2": {
+        "title": "Drive from Kathmandu to Pokhara (820m)",
+        "description": "A scenic 6-7 hour drive by tourist bus takes you to the beautiful lakeside city of Pokhara. You'll enjoy stunning views of terraced hillsides, rivers, and on a clear day, the Himalayan panorama. The rest of the day is free to explore Pokhara's famous Phewa Lake."
+      },
+      "day3": {
+        "title": "Fly to Jomsom (2,713m) & Trek to Kagbeni (2,800m)",
+        "description": "An early morning, spectacular 20-minute flight takes you between the giants Annapurna and Dhaulagiri to land in Jomsom, the wind-swept capital of the Mustang region. After breakfast in Jomsom, you begin your trek, following the Kali Gandaki riverbed (the world's deepest gorge) to the ancient village of Kagbeni. This town is the gateway to Upper Mustang and has a distinct medieval Tibetan feel."
+      },
+      "day4": {
+        "title": "Trek from Kagbeni to Muktinath (3,800m)",
+        "description": "The trail climbs steadily out of Kagbeni, offering dramatic views of the arid landscape that resembles Tibet. You'll pass through Jharkot, a village with a picturesque fortress. Your destination is Muktinath, one of the most sacred pilgrimage sites for both Hindus and Buddhists."
+      },
+      "day5": {
+        "title": "Explore Muktinath (3,800m)",
+        "description": "This is an acclimatization and exploration day. Visit the holy Muktinath Temple complex, which features 108 water spouts and a perpetual flame fueled by natural gas. The views of Dhaulagiri, Tukuche Peak, and Nilgiri are breathtaking. This rest day is crucial for adapting to the altitude."
+      },
+      "day6": {
+        "title": "Trek from Muktinath to Marpha (2,660m)",
+        "description": "A long but rewarding descent back into the Kali Gandaki Valley. You'll trek down to Jomsom and then continue to the beautiful village of Marpha, famous for its clean flagstone streets, whitewashed houses, and apple orchards. Don't miss trying the local apple brandy, cider, or pie."
+      },
+      "day7": {
+        "title": "Trek from Marpha to Kalopani (2,530m)",
+        "description": "The trail continues south, descending through several villages like Tukuche and Larjung. The landscape begins to change, with more pine forests and views of the towering Dhaulagiri ice-fall. Kalopani offers one of the best panoramic mountain views of the entire trek."
+      },
+      "day8": {
+        "title": "Trek from Kalopani to Tatopani (1,190m)",
+        "description": "A long descent today as you leave the dry, high desert and enter a lush, subtropical climate. You'll cross several suspension bridges and pass through Ghasa. Your reward at the end of the day is Tatopani, which means 'hot water,' where you can soak your tired muscles in the natural hot springs by the river."
+      },
+      "day9": {
+        "title": "Trek from Tatopani to Ghorepani (2,855m)",
+        "description": "This is one of the toughest days as you climb steeply out of the Kali Gandaki valley. The trail ascends through beautiful rhododendron forests (which are spectacular when in bloom around March-April) and terraced farms. You'll pass through Shikha and Chitre before reaching the bustling trekking hub of Ghorepani."
+      },
+      "day10": {
+        "title": "Hike to Poon Hill (3,210m) and Rest Day",
+        "description": "An early pre-dawn start for a 1-hour steep hike to Poon Hill. Your effort is rewarded with one of the most famous sunrise views in the world, a 360-degree panorama that includes Dhaulagiri, Annapurna I, Annapurna South, Machhapuchhre (Fishtail), and many more peaks. After taking in the views, you descend to Ghorepani for breakfast. The rest of the day is for relaxing and enjoying the mountain atmosphere."
+      },
+      "day11": {
+        "title": "Trek from Ghorepani to Birethanti & Drive to Pokhara",
+        "description": "Your final day of trekking takes you down through magnificent forests to Birethanti, a large village at the confluence of two rivers. After completing the trek, you'll drive for about 1.5 hours back to Pokhara. The evening is free to celebrate your accomplishment."
+      },
+      "day12": {
+        "title": "Drive from Pokhara to Kathmandu",
+        "description": "Enjoy a final morning in Pokhara. You then take the tourist bus back to Kathmandu. Upon arrival, check into your hotel and enjoy a farewell dinner (if included in your package)."
+      },
+      "day13": {
+        "title": "Free Day in Kathmandu",
+        "description": "A contingency day for flight delays or simply a day for sightseeing, souvenir shopping, or exploring Kathmandu's UNESCO World Heritage Sites like Durbar Square, Swayambhunath (Monkey Temple), or Pashupatinath."
+      },
+      "day14": {
+        "title": "Final Departure",
+        "description": "You will be transferred to the airport approximately 3 hours before your scheduled flight back home."
+      }
+    },
+    "packing": {
+      "title": "Essential Packing List",
+      "clothing": {
+        "title": "Clothing",
+        "items": [
+          "Moisture-wicking t-shirts",
+          "Trekking pants (convertible recommended)",
+          "Insulating mid-layers (fleece/down)",
+          "Waterproof jacket and pants",
+          "Thermal base layers",
+          "Hiking socks (3-4 pairs)",
+          "Warm hat and gloves",
+          "Sun hat"
+        ]
+      },
+      "footwear": {
+        "title": "Footwear & Gear",
+        "items": [
+          "Waterproof hiking boots (broken in)",
+          "Camp shoes/sandals",
+          "Trekking poles",
+          "Backpack (40-50L)",
+          "Sleeping bag (-10°C comfort rating)",
+          "Headlamp with spare batteries",
+          "Water bottles (2L capacity)",
+          "Sunglasses (UV protection)"
+        ]
+      },
+      "personal": {
+        "title": "Personal Items",
+        "items": [
+          "First aid kit",
+          "Prescription medications",
+          "Altitude sickness medication",
+          "Sunscreen and lip balm",
+          "Hand sanitizer",
+          "Toilet paper",
+          "Quick-dry towel",
+          "Camera with extra batteries"
+        ]
+      }
+    },
+    "muktinathImageAlt": "Muktinath Temple at 3,800m"
+  },
+  "annapurnaBaseCamp": {
+    "hero": {
+      "name": "Annapurna Base Camp Trek",
+      "tagline": "Experience one of the most iconic treks in the Himalayas"
+    },
+    "overview": {
+      "title": "Trek Overview",
+      "p1": "The Annapurna Base Camp trek is one of Nepal's most rewarding journeys, taking you through diverse landscapes from lush subtropical forests to high alpine meadows. The trek culminates at the amphitheater-like Annapurna Base Camp, surrounded by towering Himalayan peaks including Annapurna I (8,091m) and the sacred Machapuchare (Fishtail Mountain).",
+      "p2": "This trek offers a perfect blend of natural beauty and cultural experiences as you pass through traditional Gurung villages, terraced farmlands, and pristine forests. The well-established tea house network makes it accessible to trekkers with moderate fitness levels."
+    },
+    "quickFacts": {
+      "title": "Quick Facts",
+      "duration": "10-12 days",
+      "maxAltitude": "4,130 meters (13,550 feet)",
+      "bestSeason": "March-May & September-November",
+      "durationLabel": "Duration",
+      "maxAltitudeLabel": "Max Altitude",
+      "difficultyLabel": "Difficulty"
+    },
+    "difficulty": {
+      "title": "Trek Difficulty",
+      "description": "The Annapurna Base Camp trek is rated as moderate to challenging. While it doesn't involve technical climbing, you'll need good physical fitness to handle:",
+      "points": [
+        "Daily walking of 5-7 hours",
+        "Steep ascents and descents, particularly the stone steps to Ulleri",
+        "Altitude gain (maximum 4,130m at ABC)",
+        "Varying weather conditions"
+      ],
+      "note": "Prior trekking experience is helpful but not required. Proper acclimatization is built into the itinerary to minimize altitude sickness risk.",
+      "moderateChallenging": "Moderate to Challenging"
+    },
+    "permits": {
+      "title": "Required Permits",
+      "permitsList": [
+        "ACAP (Annapurna Conservation Area Permit)",
+        "TIMS Card (Trekkers' Information Management System)"
+      ],
+      "note": "Permits can be arranged through your trekking agency or obtained in Kathmandu/Pokhara."
+    },
+    "highlights": {
+      "title": "Trek Highlights",
+      "highlightsList": [
+        "Spectacular views of Annapurna I (8,091m), Machapuchare (6,993m), and other peaks",
+        "Diverse landscapes from lush forests to alpine terrain",
+        "Cultural experiences in traditional Gurung villages",
+        "Natural hot springs at Jhinu Danda",
+        "Sunrise view from Poon Hill (optional extension)"
+      ]
+    },
+    "itinerary": {
+      "title": "Detailed Itinerary",
+      "distance": "Distance",
+      "duration": "Duration",
+      "day1": {
+        "title": "Arrive in Kathmandu (1,400m)",
+        "description": "Arrive at Tribhuvan International Airport in Kathmandu. Transfer to your hotel and prepare for the trek. Briefing with your trek guide in the evening.",
+        "duration": "N/A"
+      },
+      "day2": {
+        "title": "Drive from Kathmandu to Pokhara (827m)",
+        "description": "Take a scenic 6-7 hour drive or a 25-minute flight to Pokhara. Enjoy views of the Annapurna and Manaslu ranges. Overnight in Pokhara by the beautiful Phewa Lake.",
+        "duration": "6-7 hours drive"
+      },
+      "day3": {
+        "title": "Drive to Nayapul and Trek to Tikhedhunga (1,540m)",
+        "description": "Drive to Nayapul (1.5 hours) and begin your trek. Walk through villages and farmland following the Modi Khola river valley. Overnight at Tikhedhunga.",
+        "duration": "4-5 hours"
+      },
+      "day4": {
+        "title": "Trek from Tikhedhunga to Ghorepani (2,860m)",
+        "description": "Challenging day with a steep climb up stone steps to Ulleri village. Continue through rhododendron and oak forests to reach Ghorepani, offering stunning mountain views.",
+        "duration": "6-7 hours"
+      },
+      "day5": {
+        "title": "Hike to Poon Hill (3,210m) and Trek to Tadapani (2,630m)",
+        "description": "Early morning hike to Poon Hill for sunrise views over the Himalayas. Return to Ghorepani for breakfast, then trek through beautiful forests to Tadapani.",
+        "duration": "5-6 hours"
+      },
+      "day6": {
+        "title": "Trek from Tadapani to Chhomrong (2,170m)",
+        "description": "Descend through dense rhododendron forests to Kimrong Khola. Climb to Chhomrong, a beautiful Gurung village with excellent views of Annapurna South and Machapuchare.",
+        "duration": "5-6 hours"
+      },
+      "day7": {
+        "title": "Trek from Chhomrong to Bamboo (2,310m)",
+        "description": "Descend on stone steps to cross the Chhomrong Khola, then climb to Sinuwa. Continue through dense bamboo and rhododendron forests to reach Bamboo.",
+        "duration": "4-5 hours"
+      },
+      "day8": {
+        "title": "Trek from Bamboo to Deurali (3,230m)",
+        "description": "Trek through bamboo and rhododendron forests, passing Himalaya Hotel and Hinku Cave. The trail becomes steeper as you approach Deurali, with views of the Modi Khola valley.",
+        "duration": "6-7 hours"
+      },
+      "day9": {
+        "title": "Trek from Deurali to Annapurna Base Camp (4,130m)",
+        "description": "Trek through alpine terrain to Machapuchare Base Camp (3,700m). Continue to Annapurna Base Camp, surrounded by the Annapurna massif. Spectacular 360° mountain views.",
+        "duration": "4-5 hours"
+      },
+      "day10": {
+        "title": "Sunrise at ABC and Trek to Bamboo (2,310m)",
+        "description": "Early morning to enjoy sunrise over the Himalayas. After breakfast, begin descent to Bamboo, retracing your steps through MBC and Deurali.",
+        "duration": "7-8 hours"
+      },
+      "day11": {
+        "title": "Trek from Bamboo to Jhinu Danda (1,780m)",
+        "description": "Continue descent through Sinuwa and Chhomrong. Descend to Jhinu Danda, where you can relax in natural hot springs near the Modi Khola river.",
+        "duration": "5-6 hours"
+      },
+      "day12": {
+        "title": "Trek from Jhinu Danda to Nayapul, Drive to Pokhara",
+        "description": "Final day of trekking through villages to Nayapul. Drive back to Pokhara (1.5 hours) and celebrate the completion of your trek.",
+        "duration": "4-5 hours trekking, 1.5 hours drive"
+      },
+      "day13": {
+        "title": "Drive/Fly from Pokhara to Kathmandu",
+        "description": "Return to Kathmandu by road or air. Free time for shopping or sightseeing in Kathmandu.",
+        "duration": "6-7 hours drive or 25 minutes flight"
+      },
+      "day14": {
+        "title": "Departure from Kathmandu",
+        "description": "Transfer to Tribhuvan International Airport for your departure flight.",
+        "duration": "N/A"
+      }
+    },
+    "packing": {
+      "title": "Essential Packing List",
+      "clothing": {
+        "title": "Clothing",
+        "items": [
+          "Moisture-wicking t-shirts",
+          "Trekking pants (convertible recommended)",
+          "Insulating mid-layers (fleece/down)",
+          "Waterproof jacket and pants",
+          "Thermal base layers",
+          "Hiking socks (3-4 pairs)",
+          "Warm hat and gloves",
+          "Sun hat"
+        ]
+      },
+      "footwear": {
+        "title": "Footwear & Gear",
+        "items": [
+          "Waterproof hiking boots (broken in)",
+          "Camp shoes/sandals",
+          "Trekking poles",
+          "Backpack (40-50L)",
+          "Sleeping bag (-10°C comfort rating)",
+          "Headlamp with spare batteries",
+          "Water bottles (2L capacity)",
+          "Sunglasses (UV protection)"
+        ]
+      },
+      "personal": {
+        "title": "Personal Items",
+        "items": [
+          "First aid kit",
+          "Prescription medications",
+          "Altitude sickness medication",
+          "Sunscreen and lip balm",
+          "Hand sanitizer",
+          "Toilet paper",
+          "Quick-dry towel",
+          "Camera with extra batteries"
+        ]
+      }
+    },
+    "imageAlt": "Annapurna Base Camp at 4,130m"
+  },
+
   "raftingPage": {
     "title": "Rafting",
     "subHeroText": "Experience the thrill of Nepal's legendary rivers",

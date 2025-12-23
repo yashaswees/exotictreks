@@ -29,9 +29,9 @@ const Hero = () => {
 
         {/* Call-to-Action Buttons */}
         <div className="d-flex flex-column flex-md-row gap-3 justify-content-center">
-          <a href="#destinations" className="btn btn-light btn-lg px-4 py-2">
+          <NavLink to="/destinations" className="btn btn-light btn-lg px-4 py-2">
             {t("hero.exploreButton")}
-          </a>
+          </NavLink>
           <NavLink
             to="/contact-us"
             className="btn btn-outline-light btn-lg px-4 py-2"
@@ -57,9 +57,9 @@ const Hero = () => {
         </div>
 
         {/* Scroll Down Icon */}
-        <a href="#destinations" className="mt-5 d-inline-block">
+        <NavLink to="#destinations" className="mt-5 d-inline-block">
           <i className="bi bi-chevron-double-down text-white fs-3"></i>
-        </a>
+        </NavLink>
       </div>
     </header>
   );

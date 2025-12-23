@@ -9,141 +9,127 @@ import Navbar from "../../components/Navbar";
 import { CiMountain1 } from "react-icons/ci";
 import Footer from "../../components/Footer";
 import { TbShoe } from "react-icons/tb";
+import { useTranslation } from "react-i18next";
 
 const AnnapurnaBaseCampTrek = () => {
+  const { t } = useTranslation();
+  
   const trekInfo = {
-    name: "Annapurna Base Camp Trek",
-    duration: "10-12 days",
-    difficulty: "Moderate to Challenging",
-    maxAltitude: "4,130 meters (13,550 feet) ",
-    bestSeason: "March-May  & September-November",
-    permits: [
-      "ACAP (Annapurna Conservation Area Permit)",
-      "TIMS Card (Trekkers' Information Management System)",
-    ],
-    highlights: [
-      "Spectacular views of Annapurna I (8,091m), Machapuchare (6,993m), and other peaks",
-      "Diverse landscapes from lush forests to alpine terrain",
-      "Cultural experiences in traditional Gurung villages",
-      "Natural hot springs at Jhinu Danda",
-      "Sunrise view from Poon Hill (optional extension)",
-    ],
+    name: t("annapurnaBaseCamp.hero.name"),
+    duration: t("annapurnaBaseCamp.quickFacts.duration"),
+    difficulty: t("annapurnaBaseCamp.difficulty.moderateChallenging"),
+    maxAltitude: t("annapurnaBaseCamp.quickFacts.maxAltitude"),
+    bestSeason: t("annapurnaBaseCamp.quickFacts.bestSeason"),
+    permits: t("annapurnaBaseCamp.permits.permitsList", { returnObjects: true }),
+    highlights: t("annapurnaBaseCamp.highlights.highlightsList", { returnObjects: true })
   };
 
   const itinerary = [
     {
       day: 1,
-      title: "Arrive in Kathmandu (1,400m)",
-      description:
-        "Arrive at Tribhuvan International Airport in Kathmandu. Transfer to your hotel and prepare for the trek. Briefing with your trek guide in the evening.",
+      title: t("annapurnaBaseCamp.itinerary.day1.title"),
+      description: t("annapurnaBaseCamp.itinerary.day1.description"),
       distance: "N/A",
       duration: "N/A",
     },
     {
       day: 2,
-      title: "Drive from Kathmandu to Pokhara (827m)",
-      description:
-        "Take a scenic 6-7 hour drive or a 25-minute flight to Pokhara. Enjoy views of the Annapurna and Manaslu ranges. Overnight in Pokhara by the beautiful Phewa Lake.",
+      title: t("annapurnaBaseCamp.itinerary.day2.title"),
+      description: t("annapurnaBaseCamp.itinerary.day2.description"),
       distance: "200 km",
-      duration: "6-7 hours drive",
+      duration: t("annapurnaBaseCamp.itinerary.day2.duration"),
     },
     {
       day: 3,
-      title: "Drive to Nayapul and Trek to Tikhedhunga (1,540m)",
-      description:
-        "Drive to Nayapul (1.5 hours) and begin your trek. Walk through villages and farmland following the Modi Khola river valley. Overnight at Tikhedhunga.",
+      title: t("annapurnaBaseCamp.itinerary.day3.title"),
+      description: t("annapurnaBaseCamp.itinerary.day3.description"),
       distance: "10 km",
-      duration: "4-5 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day3.duration"),
     },
     {
       day: 4,
-      title: "Trek from Tikhedhunga to Ghorepani (2,860m)",
-      description:
-        "Challenging day with a steep climb up stone steps to Ulleri village. Continue through rhododendron and oak forests to reach Ghorepani, offering stunning mountain views.",
+      title: t("annapurnaBaseCamp.itinerary.day4.title"),
+      description: t("annapurnaBaseCamp.itinerary.day4.description"),
       distance: "12 km",
-      duration: "6-7 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day4.duration"),
     },
     {
       day: 5,
-      title: "Hike to Poon Hill (3,210m) and Trek to Tadapani (2,630m)",
-      description:
-        "Early morning hike to Poon Hill for sunrise views over the Himalayas. Return to Ghorepani for breakfast, then trek through beautiful forests to Tadapani.",
+      title: t("annapurnaBaseCamp.itinerary.day5.title"),
+      description: t("annapurnaBaseCamp.itinerary.day5.description"),
       distance: "9 km",
-      duration: "5-6 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day5.duration"),
     },
     {
       day: 6,
-      title: "Trek from Tadapani to Chhomrong (2,170m)",
-      description:
-        "Descend through dense rhododendron forests to Kimrong Khola. Climb to Chhomrong, a beautiful Gurung village with excellent views of Annapurna South and Machapuchare.",
+      title: t("annapurnaBaseCamp.itinerary.day6.title"),
+      description: t("annapurnaBaseCamp.itinerary.day6.description"),
       distance: "10 km",
-      duration: "5-6 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day6.duration"),
     },
     {
       day: 7,
-      title: "Trek from Chhomrong to Bamboo (2,310m)",
-      description:
-        "Descend on stone steps to cross the Chhomrong Khola, then climb to Sinuwa. Continue through dense bamboo and rhododendron forests to reach Bamboo.",
+      title: t("annapurnaBaseCamp.itinerary.day7.title"),
+      description: t("annapurnaBaseCamp.itinerary.day7.description"),
       distance: "7 km",
-      duration: "4-5 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day7.duration"),
     },
     {
       day: 8,
-      title: "Trek from Bamboo to Deurali (3,230m)",
-      description:
-        "Trek through bamboo and rhododendron forests, passing Himalaya Hotel and Hinku Cave. The trail becomes steeper as you approach Deurali, with views of the Modi Khola valley.",
+      title: t("annapurnaBaseCamp.itinerary.day8.title"),
+      description: t("annapurnaBaseCamp.itinerary.day8.description"),
       distance: "11 km",
-      duration: "6-7 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day8.duration"),
     },
     {
       day: 9,
-      title: "Trek from Deurali to Annapurna Base Camp (4,130m)",
-      description:
-        "Trek through alpine terrain to Machapuchare Base Camp (3,700m). Continue to Annapurna Base Camp, surrounded by the Annapurna massif. Spectacular 360° mountain views.",
+      title: t("annapurnaBaseCamp.itinerary.day9.title"),
+      description: t("annapurnaBaseCamp.itinerary.day9.description"),
       distance: "7 km",
-      duration: "4-5 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day9.duration"),
     },
     {
       day: 10,
-      title: "Sunrise at ABC and Trek to Bamboo (2,310m)",
-      description:
-        "Early morning to enjoy sunrise over the Himalayas. After breakfast, begin descent to Bamboo, retracing your steps through MBC and Deurali.",
+      title: t("annapurnaBaseCamp.itinerary.day10.title"),
+      description: t("annapurnaBaseCamp.itinerary.day10.description"),
       distance: "14 km",
-      duration: "7-8 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day10.duration"),
     },
     {
       day: 11,
-      title: "Trek from Bamboo to Jhinu Danda (1,780m)",
-      description:
-        "Continue descent through Sinuwa and Chhomrong. Descend to Jhinu Danda, where you can relax in natural hot springs near the Modi Khola river.",
+      title: t("annapurnaBaseCamp.itinerary.day11.title"),
+      description: t("annapurnaBaseCamp.itinerary.day11.description"),
       distance: "12 km",
-      duration: "5-6 hours",
+      duration: t("annapurnaBaseCamp.itinerary.day11.duration"),
     },
     {
       day: 12,
-      title: "Trek from Jhinu Danda to Nayapul, Drive to Pokhara",
-      description:
-        "Final day of trekking through villages to Nayapul. Drive back to Pokhara (1.5 hours) and celebrate the completion of your trek.",
+      title: t("annapurnaBaseCamp.itinerary.day12.title"),
+      description: t("annapurnaBaseCamp.itinerary.day12.description"),
       distance: "9 km",
-      duration: "4-5 hours trekking, 1.5 hours drive",
+      duration: t("annapurnaBaseCamp.itinerary.day12.duration"),
     },
     {
       day: 13,
-      title: "Drive/Fly from Pokhara to Kathmandu",
-      description:
-        "Return to Kathmandu by road or air. Free time for shopping or sightseeing in Kathmandu.",
+      title: t("annapurnaBaseCamp.itinerary.day13.title"),
+      description: t("annapurnaBaseCamp.itinerary.day13.description"),
       distance: "200 km",
-      duration: "6-7 hours drive or 25 minutes flight",
+      duration: t("annapurnaBaseCamp.itinerary.day13.duration"),
     },
     {
       day: 14,
-      title: "Departure from Kathmandu",
-      description:
-        "Transfer to Tribhuvan International Airport for your departure flight.",
+      title: t("annapurnaBaseCamp.itinerary.day14.title"),
+      description: t("annapurnaBaseCamp.itinerary.day14.description"),
       distance: "N/A",
       duration: "N/A",
     },
   ];
+
+  const packingItems = {
+    clothing: t("annapurnaBaseCamp.packing.clothing.items", { returnObjects: true }),
+    footwear: t("annapurnaBaseCamp.packing.footwear.items", { returnObjects: true }),
+    personal: t("annapurnaBaseCamp.packing.personal.items", { returnObjects: true })
+  };
 
   // State to track the active accordion item
   const [activeKey, setActiveKey] = useState("0");
@@ -159,13 +145,13 @@ const AnnapurnaBaseCampTrek = () => {
               <img
                 src={img2}
                 className="img-fluid rounded shadow-sm object-fit-cover"
-                alt="Annapurna Base Camp Trek"
+                alt={t("annapurnaBaseCamp.hero.name")}
               />
             </div>
             <div className="position-absolute bottom-0 start-0 p-4 text-white">
               <h1 className="fw-bold">{trekInfo.name}</h1>
               <p className="lead">
-                Experience one of the most iconic treks in the Himalayas
+                {t("annapurnaBaseCamp.hero.tagline")}
               </p>
             </div>
           </div>
@@ -181,21 +167,14 @@ const AnnapurnaBaseCampTrek = () => {
               }}
             >
               <div className="card-body">
-                <h2 className="card-title fw-bold">Trek Overview</h2>
+                <h2 className="card-title fw-bold">
+                  {t("annapurnaBaseCamp.overview.title")}
+                </h2>
                 <p className="card-text">
-                  The Annapurna Base Camp trek is one of Nepal's most rewarding
-                  journeys, taking you through diverse landscapes from lush
-                  subtropical forests to high alpine meadows. The trek
-                  culminates at the amphitheater-like Annapurna Base Camp,
-                  surrounded by towering Himalayan peaks including Annapurna I
-                  (8,091m) and the sacred Machapuchare (Fishtail Mountain).
+                  {t("annapurnaBaseCamp.overview.p1")}
                 </p>
                 <p className="card-text">
-                  This trek offers a perfect blend of natural beauty and
-                  cultural experiences as you pass through traditional Gurung
-                  villages, terraced farmlands, and pristine forests. The
-                  well-established tea house network makes it accessible to
-                  trekkers with moderate fitness levels.
+                  {t("annapurnaBaseCamp.overview.p2")}
                 </p>
               </div>
             </div>
@@ -207,7 +186,9 @@ const AnnapurnaBaseCampTrek = () => {
               style={{ background: "#f8f9fa" }}
             >
               <div className="card-body">
-                <h3 className="card-title fw-bold mb-4">Quick Facts</h3>
+                <h3 className="card-title fw-bold mb-4">
+                  {t("annapurnaBaseCamp.quickFacts.title")}
+                </h3>
 
                 <div
                   className="quick-fact-item d-flex align-items-center mb-3 p-2 rounded"
@@ -223,7 +204,9 @@ const AnnapurnaBaseCampTrek = () => {
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Duration</div>
+                    <div className="text-muted small">
+                      {t("annapurnaBaseCamp.quickFacts.durationLabel")}
+                    </div>
                     <div className="fw-medium">{trekInfo.duration}</div>
                   </div>
                 </div>
@@ -242,7 +225,9 @@ const AnnapurnaBaseCampTrek = () => {
                     />
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Max Altitude</div>
+                    <div className="text-muted small">
+                      {t("annapurnaBaseCamp.quickFacts.maxAltitudeLabel")}
+                    </div>
                     <div className="fw-medium">{trekInfo.maxAltitude}</div>
                   </div>
                 </div>
@@ -261,7 +246,9 @@ const AnnapurnaBaseCampTrek = () => {
                     ></i>
                   </div>
                   <div className="quick-fact-content">
-                    <div className="text-muted small">Difficulty</div>
+                    <div className="text-muted small">
+                      {t("annapurnaBaseCamp.quickFacts.difficultyLabel")}
+                    </div>
                     <div className="fw-medium">{trekInfo.difficulty}</div>
                   </div>
                 </div>
@@ -280,7 +267,9 @@ const AnnapurnaBaseCampTrek = () => {
               <div className="card-body">
                 <div className="row">
                   <div className="col-md-8">
-                    <h3 className="card-title fw-bold">Trek Difficulty</h3>
+                    <h3 className="card-title fw-bold">
+                      {t("annapurnaBaseCamp.difficulty.title")}
+                    </h3>
                     <div className="d-flex align-items-center mb-3">
                       <h4 className="me-3 mb-0">
                         <span className="badge bg-light text-primary border border-primary">
@@ -289,23 +278,15 @@ const AnnapurnaBaseCampTrek = () => {
                       </h4>
                     </div>
                     <p className="card-text">
-                      The Annapurna Base Camp trek is rated as moderate to
-                      challenging. While it doesn't involve technical climbing,
-                      you'll need good physical fitness to handle:
+                      {t("annapurnaBaseCamp.difficulty.description")}
                     </p>
                     <ul>
-                      <li>Daily walking of 5-7 hours</li>
-                      <li>
-                        Steep ascents and descents, particularly the stone steps
-                        to Ulleri
-                      </li>
-                      <li>Altitude gain (maximum 4,130m at ABC)</li>
-                      <li>Varying weather conditions</li>
+                      {t("annapurnaBaseCamp.difficulty.points", { returnObjects: true }).map((point, index) => (
+                        <li key={index}>{point}</li>
+                      ))}
                     </ul>
                     <p className="card-text">
-                      Prior trekking experience is helpful but not required.
-                      Proper acclimatization is built into the itinerary to
-                      minimize altitude sickness risk.
+                      {t("annapurnaBaseCamp.difficulty.note")}
                     </p>
                   </div>
                   <div className="col-md-4">
@@ -314,11 +295,11 @@ const AnnapurnaBaseCampTrek = () => {
                       <img
                         src={img1}
                         className="img-fluid rounded shadow-sm object-fit-cover"
-                        alt="Annapurna Base Camp"
+                        alt={t("annapurnaBaseCamp.imageAlt")}
                       />
                     </div>
                     <p className="text-center small mt-2 text-muted">
-                      Annapurna Base Camp at 4,130m
+                      {t("annapurnaBaseCamp.imageAlt")}
                     </p>
                   </div>
                 </div>
@@ -339,7 +320,9 @@ const AnnapurnaBaseCampTrek = () => {
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-clipboard-check text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">Required Permits</h3>
+                  <h3 className="card-title fw-bold mb-0">
+                    {t("annapurnaBaseCamp.permits.title")}
+                  </h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {trekInfo.permits.map((permit, index) => (
@@ -354,8 +337,7 @@ const AnnapurnaBaseCampTrek = () => {
                 </ul>
                 <div className="alert alert-light border mt-3">
                   <i className="bi bi-info-circle-fill text-primary me-2"></i>
-                  Permits can be arranged through your trekking agency or
-                  obtained in Kathmandu/Pokhara.
+                  {t("annapurnaBaseCamp.permits.note")}
                 </div>
               </div>
             </div>
@@ -372,7 +354,9 @@ const AnnapurnaBaseCampTrek = () => {
                   <div className="rounded-circle bg-primary bg-opacity-10 px-2 py-1 me-2">
                     <i className="bi bi-star text-primary"></i>
                   </div>
-                  <h3 className="card-title fw-bold mb-0">Trek Highlights</h3>
+                  <h3 className="card-title fw-bold mb-0">
+                    {t("annapurnaBaseCamp.highlights.title")}
+                  </h3>
                 </div>
                 <ul className="list-group list-group-flush">
                   {trekInfo.highlights.map((highlight, index) => (
@@ -404,7 +388,7 @@ const AnnapurnaBaseCampTrek = () => {
                     style={{ fontSize: "1.2rem" }}
                   ></i>
                   <h2 className="card-title fw-bold mb-0">
-                    Detailed Itinerary
+                    {t("annapurnaBaseCamp.itinerary.title")}
                   </h2>
                 </div>
               </div>
@@ -440,12 +424,16 @@ const AnnapurnaBaseCampTrek = () => {
                             <div className="bg-light p-2 rounded small">
                               <div className="mb-1">
                                 <i className="bi bi-arrows-move me-1 text-primary"></i>
-                                <span className="fw-medium">Distance:</span>{" "}
+                                <span className="fw-medium">
+                                  {t("annapurnaBaseCamp.itinerary.distance")}:
+                                </span>{" "}
                                 {day.distance}
                               </div>
                               <div>
                                 <i className="bi bi-clock me-1 text-primary"></i>
-                                <span className="fw-medium">Duration:</span>{" "}
+                                <span className="fw-medium">
+                                  {t("annapurnaBaseCamp.itinerary.duration")}:
+                                </span>{" "}
                                 {day.duration}
                               </div>
                             </div>
@@ -475,7 +463,7 @@ const AnnapurnaBaseCampTrek = () => {
                     <i className="bi bi-backpack text-primary"></i>
                   </div>
                   <h3 className="card-title fw-bold mb-0">
-                    Essential Packing List
+                    {t("annapurnaBaseCamp.packing.title")}
                   </h3>
                 </div>
                 <div className="row">
@@ -488,33 +476,14 @@ const AnnapurnaBaseCampTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <i className="bi bi-layers me-2 text-primary"></i>
-                            Clothing
+                            {t("annapurnaBaseCamp.packing.clothing.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Moisture-wicking t-shirts
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Trekking pants (convertible recommended)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Insulating mid-layers (fleece/down)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Waterproof jacket and pants
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Thermal base layers
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Hiking socks (3-4 pairs)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Warm hat and gloves
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sun hat
-                            </li>
+                            {packingItems.clothing.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -525,33 +494,14 @@ const AnnapurnaBaseCampTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <TbShoe className=" me-2 text-primary"/>
-                            Footwear & Gear
+                            {t("annapurnaBaseCamp.packing.footwear.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Waterproof hiking boots (broken in)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Camp shoes/sandals
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Trekking poles
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Backpack (40-50L)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sleeping bag (-10°C comfort rating)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Headlamp with spare batteries
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Water bottles (2L capacity)
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sunglasses (UV protection)
-                            </li>
+                            {packingItems.footwear.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>
@@ -562,33 +512,14 @@ const AnnapurnaBaseCampTrek = () => {
                         >
                           <h5 className="fw-medium d-flex align-items-center">
                             <i className="bi bi-bandaid me-2 text-primary"></i>
-                            Personal Items
+                            {t("annapurnaBaseCamp.packing.personal.title")}
                           </h5>
                           <ul className="list-group list-group-flush">
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              First aid kit
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Prescription medications
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Altitude sickness medication
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Sunscreen and lip balm
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Hand sanitizer
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Toilet paper
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Quick-dry towel
-                            </li>
-                            <li className="list-group-item border-0 py-1 bg-transparent">
-                              Camera with extra batteries
-                            </li>
+                            {packingItems.personal.map((item, index) => (
+                              <li key={index} className="list-group-item border-0 py-1 bg-transparent">
+                                {item}
+                              </li>
+                            ))}
                           </ul>
                         </div>
                       </div>

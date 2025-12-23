@@ -9,6 +9,7 @@
     "happyTravelers": "Voyageurs satisfaits",
     "exoticCountries": "Pays exotiques"
   },
+
   "navbar": {
     "itinerary": "Itinéraire",
     "activities": "Activités",
@@ -24,7 +25,31 @@
     "blogs": "Blogs",
     "about": "À propos",
     "contact": "Contact",
-    "bookNow": "Réserver"
+    "bookNow": "Réserver",
+    "peakClimbing": "Escalade de sommet",
+    "pilgrimageTour": "Tour pèlerinage",
+    "expeditions": "Expéditions",
+    "rafting": "Rafting",
+    "birdWatching": "Observation des oiseaux",
+    "visitNepal": "Visiter le Népal",
+    "annapurnaBaseCamp": "Camp de base des Annapurnas",
+    "annapurnaCircuit": "Circuit des Annapurnas",
+    "larkeLaPass": "Col de Larke La",
+    "everestTrek": "Trek Everest",
+    "everestClassic": "Trek classique Everest",
+    "everestBaseCamp": "Camp de base de l'Everest",
+    "everestFoothill": "Trek piémont Everest",
+    "everestKalapathar": "Trek Everest Kalapathar",
+    "everestTengboche": "Trek Everest Tengboche",
+    "imjaTse": "Trek Imja Tse",
+    "manasluCircuit": "Circuit du Manaslu",
+    "langtangTrek": "Trek Langtang",
+    "langtangGanjala": "Vallée de Langtang : Ganjala",
+    "langtangGosaikunda": "Vallée de Langtang : Gosaikunda",
+    "langtangValley": "Trek de la vallée de Langtang",
+    "rubyValley": "Trek de la vallée de Ruby",
+    "mustangTrek": "Trek du Mustang",
+    "dhaulagiriTrek": "Trek du Dhaulagiri"
   },
   "destinations": {
     "title": "Destinations phares",
@@ -140,6 +165,329 @@
   },
   "expeditionPage": {
     "title": "Expéditions"
+  },
+
+ 
+
+  "annapurnaCircuitJomsom": {
+    "hero": {
+      "name": "Circuit des Annapurnas (Jomsom) & Trek de Poon Hill",
+      "tagline": "Un voyage à travers la gorge la plus profonde du monde, vers des temples sacrés et des levers de soleil spectaculaires"
+    },
+    "overview": {
+      "title": "Présentation du trek",
+      "p1": "Le circuit des Annapurnas (Jomsom) & Poon Hill combine le meilleur des expériences de trekking au Népal. En commençant par un vol panoramique vers Jomsom, vous traverserez la gorge la plus profonde du monde — la vallée de la Kali Gandaki — visiterez le temple sacré de Muktinath et admirerez le célèbre lever de soleil depuis Poon Hill.",
+      "p2": "Ce trek offre une diversité exceptionnelle — des paysages arides de type tibétain du Haut Mustang aux forêts luxuriantes de rhododendrons et aux villages népalais traditionnels. Vous profiterez des sources chaudes naturelles de Tatopani, des vergers de pommiers de Marpha et de vues panoramiques sur les sommets du Dhaulagiri, de l'Annapurna et du Machhapuchhre."
+    },
+    "quickFacts": {
+      "title": "Infos rapides",
+      "duration": "Durée",
+      "maxAltitude": "Altitude maximale",
+      "difficulty": "Difficulté"
+    },
+    "difficulty": {
+      "title": "Difficulté du trek",
+      "description": "Le trek Annapurna Circuit (Jomsom) & Poon Hill est classé de modéré à difficile. Bien qu'il ne comporte pas d'escalade technique, une bonne condition physique est nécessaire pour :",
+      "points": [
+        "Marcher 5 à 8 heures par jour",
+        "Affronter des montées raides, notamment de Tatopani à Ghorepani",
+        "Supporter l'altitude (maximum 3 800 m à Muktinath)",
+        "Faire face à des conditions météorologiques et de terrain variées"
+      ],
+      "note": "Une expérience préalable du trekking est utile mais non obligatoire. Une journée d'acclimatation à Muktinath est prévue pour réduire les risques liés à l'altitude.",
+      "moderateChallenging": "Modéré à Difficile"
+    },
+    "permits": {
+      "title": "Permis requis",
+      "permitsList": [
+        "ACAP (Permis de la zone de conservation des Annapurnas)",
+        "Carte TIMS (Système d'information des trekkeurs)"
+      ],
+      "note": "Les permis peuvent être organisés par votre agence de trekking ou obtenus à Katmandou ou Pokhara."
+    },
+    "highlights": {
+      "title": "Points forts du trek",
+      "highlightsList": [
+        "Célèbre lever de soleil depuis Poon Hill (3 210 m)",
+        "Temple sacré de Muktinath - site de pèlerinage pour les hindous et bouddhistes",
+        "Randonnée dans la gorge la plus profonde du monde - Kali Gandaki",
+        "Sources chaudes naturelles à Tatopani",
+        "Vol panoramique entre l'Annapurna et le Dhaulagiri vers Jomsom",
+        "Magnifiques vergers de pommiers dans le village de Marpha"
+      ]
+    },
+    "itinerary": {
+      "title": "Itinéraire détaillé",
+      "distance": "Distance",
+      "duration": "Durée",
+      "day1": {
+        "title": "Arrivée à Katmandou (1 350 m)",
+        "description": "À votre arrivée à l'aéroport international de Tribhuvan, un représentant vous accueillera et vous transférera à votre hôtel. La journée est libre pour vous détendre et récupérer de votre voyage. Le soir, vous aurez un briefing avec votre guide de trek sur l'aventure à venir."
+      },
+      "day2": {
+        "title": "Trajet de Katmandou à Pokhara (820 m)",
+        "description": "Un trajet panoramique de 6 à 7 heures en bus touristique vous emmène à la belle ville lacustre de Pokhara. Vous profiterez de vues imprenables sur les collines en terrasses, les rivières et, par temps clair, le panorama himalayen. Le reste de la journée est libre pour explorer le célèbre lac Phewa de Pokhara."
+      },
+      "day3": {
+        "title": "Vol vers Jomsom (2 713 m) & Randonnée vers Kagbeni (2 800 m)",
+        "description": "Un vol matinal spectaculaire de 20 minutes vous emmène entre les géants Annapurna et Dhaulagiri pour atterrir à Jomsom, la capitale venteuse de la région du Mustang. Après le petit-déjeuner à Jomsom, vous commencez votre randonnée, suivant le lit de la rivière Kali Gandaki (la gorge la plus profonde du monde) jusqu'au village ancien de Kagbeni. Cette ville est la porte d'entrée du Haut Mustang et a une atmosphère tibétaine médiévale distincte."
+      },
+      "day4": {
+        "title": "Randonnée de Kagbeni à Muktinath (3 800 m)",
+        "description": "Le sentier monte régulièrement depuis Kagbeni, offrant des vues spectaculaires sur le paysage aride semblable au Tibet. Vous passerez par Jharkot, un village avec une forteresse pittoresque. Votre destination est Muktinath, l'un des sites de pèlerinage les plus sacrés pour les hindous et les bouddhistes."
+      },
+      "day5": {
+        "title": "Exploration de Muktinath (3 800 m)",
+        "description": "C'est une journée d'acclimatation et d'exploration. Visitez le complexe du temple sacré de Muktinath, qui comporte 108 fontaines d'eau et une flamme perpétuelle alimentée par du gaz naturel. Les vues sur le Dhaulagiri, le pic Tukuche et le Nilgiri sont à couper le souffle. Cette journée de repos est cruciale pour s'adapter à l'altitude."
+      },
+      "day6": {
+        "title": "Randonnée de Muktinath à Marpha (2 660 m)",
+        "description": "Une longue descente mais gratifiante dans la vallée de la Kali Gandaki. Vous descendrez vers Jomsom puis continuerez vers le beau village de Marpha, célèbre pour ses rues pavées propres, ses maisons blanchies à la chaux et ses vergers de pommiers. Ne manquez pas de goûter au brandy de pomme local, au cidre ou à la tarte."
+      },
+      "day7": {
+        "title": "Randonnée de Marpha à Kalopani (2 530 m)",
+        "description": "Le sentier continue vers le sud, descendant à travers plusieurs villages comme Tukuche et Larjung. Le paysage commence à changer, avec plus de forêts de pins et des vues sur l'imposante cascade de glace du Dhaulagiri. Kalopani offre l'une des meilleures vues panoramiques sur les montagnes de tout le trek."
+      },
+      "day8": {
+        "title": "Randonnée de Kalopani à Tatopani (1 190 m)",
+        "description": "Une longue descente aujourd'hui alors que vous quittez le désert aride et élevé et entrez dans un climat subtropical luxuriant. Vous traverserez plusieurs ponts suspendus et passerez par Ghasa. Votre récompense à la fin de la journée est Tatopani, qui signifie 'eau chaude', où vous pourrez détendre vos muscles fatigués dans les sources chaudes naturelles au bord de la rivière."
+      },
+      "day9": {
+        "title": "Randonnée de Tatopani à Ghorepani (2 855 m)",
+        "description": "C'est l'une des journées les plus difficiles alors que vous grimpez abruptement hors de la vallée de la Kali Gandaki. Le sentier monte à travers de magnifiques forêts de rhododendrons (spectaculaires en fleurs vers mars-avril) et des fermes en terrasses. Vous passerez par Shikha et Chitre avant d'atteindre le centre de trek animé de Ghorepani."
+      },
+      "day10": {
+        "title": "Randonnée vers Poon Hill (3 210 m) et journée de repos",
+        "description": "Départ tôt avant l'aube pour une randonnée raide d'une heure vers Poon Hill. Votre effort est récompensé par l'un des levers de soleil les plus célèbres au monde, un panorama à 360 degrés qui inclut le Dhaulagiri, l'Annapurna I, l'Annapurna Sud, le Machhapuchhre (Queue de Poisson) et bien d'autres sommets. Après avoir admiré la vue, vous redescendez à Ghorepani pour le petit-déjeuner. Le reste de la journée est consacré à la détente et à la découverte de l'atmosphère montagnarde."
+      },
+      "day11": {
+        "title": "Randonnée de Ghorepani à Birethanti & Trajet vers Pokhara",
+        "description": "Votre dernière journée de randonnée vous emmène à travers de magnifiques forêts jusqu'à Birethanti, un grand village au confluent de deux rivières. Après avoir terminé le trek, vous prendrez la route pendant environ 1,5 heure pour retourner à Pokhara. La soirée est libre pour célébrer votre accomplissement."
+      },
+      "day12": {
+        "title": "Trajet de Pokhara à Katmandou",
+        "description": "Profitez d'une dernière matinée à Pokhara. Vous prendrez ensuite le bus touristique pour retourner à Katmandou. À votre arrivée, enregistrez-vous à votre hôtel et profitez d'un dîner d'adieu (s'il est inclus dans votre forfait)."
+      },
+      "day13": {
+        "title": "Journée libre à Katmandou",
+        "description": "Une journée de réserve pour les retards de vol ou simplement une journée pour le tourisme, les achats de souvenirs, ou l'exploration des sites du patrimoine mondial de l'UNESCO de Katmandou comme Durbar Square, Swayambhunath (Temple des Singes) ou Pashupatinath."
+      },
+      "day14": {
+        "title": "Départ final",
+        "description": "Vous serez transféré à l'aéroport environ 3 heures avant votre vol de retour programmé."
+      }
+    },
+    "packing": {
+      "title": "Liste de bagages essentielle",
+      "clothing": {
+        "title": "Vêtements",
+        "items": [
+          "T-shirts respirants",
+          "Pantalons de randonnée (convertibles recommandés)",
+          "Couches intermédiaires isolantes (polaires/doudoune)",
+          "Veste et pantalon imperméables",
+          "Sous-vêtements thermiques",
+          "Chaussettes de randonnée (3-4 paires)",
+          "Bonnet et gants chauds",
+          "Chapeau de soleil"
+        ]
+      },
+      "footwear": {
+        "title": "Chaussures & Équipement",
+        "items": [
+          "Bottes de randonnée imperméables (rodées)",
+          "Chaussures de camp/sandales",
+          "Bâtons de randonnée",
+          "Sac à dos (40-50L)",
+          "Sac de couchage (confort -10°C)",
+          "Lampe frontale avec piles de rechange",
+          "Gourdes (capacité 2L)",
+          "Lunettes de soleil (protection UV)"
+        ]
+      },
+      "personal": {
+        "title": "Articles personnels",
+        "items": [
+          "Trousse de premiers secours",
+          "Médicaments sur ordonnance",
+          "Médicament contre le mal d'altitude",
+          "Crème solaire et baume à lèvres",
+          "Gel hydroalcoolique",
+          "Papier toilette",
+          "Serviette à séchage rapide",
+          "Appareil photo avec batteries supplémentaires"
+        ]
+      }
+    },
+    "muktinathImageAlt": "Temple de Muktinath à 3 800 m"
+  },
+  "annapurnaBaseCamp": {
+    "hero": {
+      "name": "Trek du camp de base des Annapurnas",
+      "tagline": "Vivez l'un des treks les plus emblématiques de l'Himalaya"
+    },
+    "overview": {
+      "title": "Présentation du trek",
+      "p1": "Le trek du camp de base des Annapurnas est l'un des voyages les plus gratifiants du Népal, vous emmenant à travers des paysages divers, des forêts subtropicales luxuriantes aux prairies alpines élevées. Le trek culmine au camp de base des Annapurnas, en forme d'amphithéâtre, entouré de sommets himalayens imposants dont l'Annapurna I (8 091 m) et le sacré Machapuchare (montagne Queue de Poisson).",
+      "p2": "Ce trek offre un mélange parfait de beauté naturelle et d'expériences culturelles alors que vous traversez des villages traditionnels Gurung, des terres agricoles en terrasses et des forêts préservées. Le réseau bien établi de maisons de thé le rend accessible aux randonneurs avec un niveau de forme physique modéré."
+    },
+    "quickFacts": {
+      "title": "Infos rapides",
+      "duration": "10-12 jours",
+      "maxAltitude": "4 130 mètres (13 550 pieds)",
+      "bestSeason": "Mars-Mai & Septembre-Novembre",
+      "durationLabel": "Durée",
+      "maxAltitudeLabel": "Altitude maximale",
+      "difficultyLabel": "Difficulté"
+    },
+    "difficulty": {
+      "title": "Difficulté du trek",
+      "description": "Le trek du camp de base des Annapurnas est classé de modéré à difficile. Bien qu'il n'implique pas d'escalade technique, vous aurez besoin d'une bonne condition physique pour :",
+      "points": [
+        "Marche quotidienne de 5 à 7 heures",
+        "Montées et descentes raides, notamment les escaliers en pierre vers Ulleri",
+        "Gain d'altitude (maximum 4 130 m au camp de base)",
+        "Conditions météorologiques variables"
+      ],
+      "note": "Une expérience préalable du trekking est utile mais non obligatoire. Une acclimatation appropriée est intégrée à l'itinéraire pour minimiser les risques de mal d'altitude.",
+      "moderateChallenging": "Modéré à difficile"
+    },
+    "permits": {
+      "title": "Permis requis",
+      "permitsList": [
+        "ACAP (Permis de la zone de conservation des Annapurnas)",
+        "Carte TIMS (Système d'information des trekkeurs)"
+      ],
+      "note": "Les permis peuvent être organisés par votre agence de trekking ou obtenus à Katmandou ou Pokhara."
+    },
+    "highlights": {
+      "title": "Points forts du trek",
+      "highlightsList": [
+        "Vues spectaculaires sur l'Annapurna I (8 091 m), le Machapuchare (6 993 m) et d'autres sommets",
+        "Paysages divers, des forêts luxuriantes au terrain alpin",
+        "Expériences culturelles dans les villages traditionnels Gurung",
+        "Sources chaudes naturelles à Jhinu Danda",
+        "Lever de soleil depuis Poon Hill (extension optionnelle)"
+      ]
+    },
+    "itinerary": {
+      "title": "Itinéraire détaillé",
+      "distance": "Distance",
+      "duration": "Durée",
+      "day1": {
+        "title": "Arrivée à Katmandou (1 400 m)",
+        "description": "Arrivée à l'aéroport international Tribhuvan de Katmandou. Transfert à votre hôtel et préparation pour le trek. Briefing avec votre guide de trek en soirée.",
+        "duration": "N/A"
+      },
+      "day2": {
+        "title": "Trajet de Katmandou à Pokhara (827 m)",
+        "description": "Prenez un trajet panoramique de 6 à 7 heures ou un vol de 25 minutes jusqu'à Pokhara. Profitez des vues sur les chaînes de l'Annapurna et du Manaslu. Nuit à Pokhara près du magnifique lac Phewa.",
+        "duration": "6-7 heures de route"
+      },
+      "day3": {
+        "title": "Trajet vers Nayapul et trek vers Tikhedhunga (1 540 m)",
+        "description": "Trajet vers Nayapul (1,5 heure) et début de votre trek. Marchez à travers villages et terres agricoles en suivant la vallée de la rivière Modi Khola. Nuit à Tikhedhunga.",
+        "duration": "4-5 heures"
+      },
+      "day4": {
+        "title": "Trek de Tikhedhunga à Ghorepani (2 860 m)",
+        "description": "Journée difficile avec une montée raide par des escaliers en pierre jusqu'au village d'Ulleri. Continuez à travers forêts de rhododendrons et de chênes pour atteindre Ghorepani, offrant des vues imprenables sur les montagnes.",
+        "duration": "6-7 heures"
+      },
+      "day5": {
+        "title": "Randonnée vers Poon Hill (3 210 m) et trek vers Tadapani (2 630 m)",
+        "description": "Randonnée matinale vers Poon Hill pour le lever de soleil sur l'Himalaya. Retour à Ghorepani pour le petit-déjeuner, puis trek à travers de magnifiques forêts jusqu'à Tadapani.",
+        "duration": "5-6 heures"
+      },
+      "day6": {
+        "title": "Trek de Tadapani à Chhomrong (2 170 m)",
+        "description": "Descente à travers d'épaisses forêts de rhododendrons jusqu'à Kimrong Khola. Montez jusqu'à Chhomrong, un beau village Gurung avec d'excellentes vues sur l'Annapurna Sud et le Machapuchare.",
+        "duration": "5-6 heures"
+      },
+      "day7": {
+        "title": "Trek de Chhomrong à Bamboo (2 310 m)",
+        "description": "Descendez par des escaliers en pierre pour traverser le Chhomrong Khola, puis montez jusqu'à Sinuwa. Continuez à travers d'épaisses forêts de bambous et de rhododendrons pour atteindre Bamboo.",
+        "duration": "4-5 heures"
+      },
+      "day8": {
+        "title": "Trek de Bamboo à Deurali (3 230 m)",
+        "description": "Trek à travers forêts de bambous et de rhododendrons, passant par l'Hôtel Himalaya et la Grotte Hinku. Le sentier devient plus raide à l'approche de Deurali, avec des vues sur la vallée de Modi Khola.",
+        "duration": "6-7 heures"
+      },
+      "day9": {
+        "title": "Trek de Deurali au camp de base des Annapurnas (4 130 m)",
+        "description": "Trek à travers terrain alpin jusqu'au camp de base du Machapuchare (3 700 m). Continuez jusqu'au camp de base des Annapurnas, entouré du massif de l'Annapurna. Vues spectaculaires à 360° sur les montagnes.",
+        "duration": "4-5 heures"
+      },
+      "day10": {
+        "title": "Lever de soleil au camp de base et trek vers Bamboo (2 310 m)",
+        "description": "Tôt le matin pour profiter du lever de soleil sur l'Himalaya. Après le petit-déjeuner, commencez la descente vers Bamboo, en retraçant vos pas par le MBC et Deurali.",
+        "duration": "7-8 heures"
+      },
+      "day11": {
+        "title": "Trek de Bamboo à Jhinu Danda (1 780 m)",
+        "description": "Continuez la descente par Sinuwa et Chhomrong. Descendez jusqu'à Jhinu Danda, où vous pourrez vous détendre dans les sources chaudes naturelles près de la rivière Modi Khola.",
+        "duration": "5-6 heures"
+      },
+      "day12": {
+        "title": "Trek de Jhinu Danda à Nayapul, trajet vers Pokhara",
+        "description": "Dernier jour de trek à travers villages jusqu'à Nayapul. Retour en voiture à Pokhara (1,5 heure) et célébrez l'achèvement de votre trek.",
+        "duration": "4-5 heures de trek, 1,5 heure de route"
+      },
+      "day13": {
+        "title": "Trajet/Vol de Pokhara à Katmandou",
+        "description": "Retour à Katmandou par la route ou les airs. Temps libre pour le shopping ou le tourisme à Katmandou.",
+        "duration": "6-7 heures de route ou 25 minutes de vol"
+      },
+      "day14": {
+        "title": "Départ de Katmandou",
+        "description": "Transfert à l'aéroport international Tribhuvan pour votre vol de départ.",
+        "duration": "N/A"
+      }
+    },
+    "packing": {
+      "title": "Liste de bagages essentielle",
+      "clothing": {
+        "title": "Vêtements",
+        "items": [
+          "T-shirts respirants",
+          "Pantalons de trekking (convertibles recommandés)",
+          "Couches intermédiaires isolantes (polaires/doudoune)",
+          "Veste et pantalon imperméables",
+          "Sous-vêtements thermiques",
+          "Chaussettes de randonnée (3-4 paires)",
+          "Bonnet et gants chauds",
+          "Chapeau de soleil"
+        ]
+      },
+      "footwear": {
+        "title": "Chaussures & Équipement",
+        "items": [
+          "Bottes de randonnée imperméables (rodées)",
+          "Chaussures de camp/sandales",
+          "Bâtons de trekking",
+          "Sac à dos (40-50L)",
+          "Sac de couchage (confort -10°C)",
+          "Lampe frontale avec piles de rechange",
+          "Gourdes (capacité 2L)",
+          "Lunettes de soleil (protection UV)"
+        ]
+      },
+      "personal": {
+        "title": "Articles personnels",
+        "items": [
+          "Trousse de premiers secours",
+          "Médicaments sur ordonnance",
+          "Médicament contre le mal d'altitude",
+          "Crème solaire et baume à lèvres",
+          "Gel hydroalcoolique",
+          "Papier toilette",
+          "Serviette à séchage rapide",
+          "Appareil photo avec batteries supplémentaires"
+        ]
+      }
+    },
+    "imageAlt": "Camp de base des Annapurnas à 4 130 m"
   },
   "raftingPage": {
     "title": "Rafting",

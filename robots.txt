@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://exotiquenepal.com/sitemap-index.xml
+Host: https://www.exotiquenepal.com
