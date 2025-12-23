@@ -57,7 +57,7 @@ const Home = () => {
         </div>
         <section className="py-5">
           <h1 className="text-center fw-bold mb-5">
-            Partners and Certifications
+            Partners and Certification
           </h1>
           <Marquee />
         </section>
